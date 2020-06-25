@@ -1,12 +1,8 @@
 {
   "name": "@pathscale/bulma-extensions-css-var",
-  "version": "0.9.1",
+  "version": "0.0.2",
   "homepage": "https://bulma-extensions-css-var.io",
-  "author": {
-    "name": "Jeremy Thomas",
-    "email": "bbxdesign@gmail.com",
-    "url": "https://jgthms.com"
-  },
+  "author": "Jeremy Thomas <bbxdesign@gmail.com> (https://jgthms.com)",
   "description": "Modern CSS framework based on Flexbox",
   "main": "bulma-extensions-css-var.sass",
   "unpkg": "css/bulma-extensions-css-var.css",
@@ -49,7 +45,7 @@
     "build-sass": "echo 'The build-sass script has been deprecated use build:sass instead' && npm run build:sass --"
   },
   "bin": {
-    "bulma-build-css": "./build.js"
+    "bulma-build-css": "build.js"
   },
   "files": [
     "css",
@@ -57,5 +53,6 @@
     "bulma-extensions-css-var.sass",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "dependencies": {}
 }
