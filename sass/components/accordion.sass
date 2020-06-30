@@ -1,0 +1,25 @@
+$accordion-background: $background
+$accordion-padding: 10px 20px 10px 40px; !default
+$accordion-child-padding: 18px
+$accordion-trigger-font-size: 15px
+$accordion-font-color: #eee
+
+.is-vertical
+    flex-direction: row
+.is-horizontal
+    flex-direction: column
+.accordion
+    display: flex
+    background-color: $accordion-background
+    cursor: pointer
+    padding: $accordion-padding
+    .accordion-trigger 
+        color: $accordion-font-color
+        padding: $accordion-child-padding
+        border: none
+        outline: none
+        font-size: $accordion-trigger-font-size
+    .accordion-content
+        padding: $accordion-child-padding
+        color: $accordion-font-color
+    
