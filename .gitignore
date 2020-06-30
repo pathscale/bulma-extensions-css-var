@@ -9,6 +9,7 @@ test.html
 test.sass
 test.css
 test.css.map
+*.ps1
 
 # Folders
 

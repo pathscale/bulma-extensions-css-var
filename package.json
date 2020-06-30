@@ -1,17 +1,7 @@
 {
   "name": "@pathscale/bulma-extensions-css-var",
   "version": "0.0.5",
-  "homepage": "https://bulma-extensions-css-var.io",
-  "author": "Jeremy Thomas <bbxdesign@gmail.com> (https://jgthms.com)",
   "description": "Modern CSS framework based on Flexbox",
-  "main": "bulma-extensions-css-var.sass",
-  "unpkg": "css/bulma-extensions-css-var.css",
-  "style": "bulma/css/bulma-extensions-css-var.min.css",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pathscale/bulma-extensions-css-var.git"
-  },
-  "license": "MIT",
   "keywords": [
     "css",
     "sass",
@@ -19,31 +9,19 @@
     "responsive",
     "framework"
   ],
+  "homepage": "https://bulma-extensions-css-var.io",
   "bugs": {
     "url": "https://github.com/pathscale/bulma-extensions-css-var/issues"
   },
-  "devDependencies": {
-    "autoprefixer": "^9.8.0",
-    "clean-css": "^4.2.3",
-    "node-sass": "^4.14.1",
-    "postcss": "^7.0.32",
-    "postcss-calc": "^7.0.2",
-    "postcss-var-optimize": "^0.0.4",
-    "rimraf": "^3.0.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pathscale/bulma-extensions-css-var.git"
   },
-  "scripts": {
-    "build": "npm run build:clean && npm run build:sass-vars",
-    "build:clean": "rimraf css",
-    "build:sass": "node build.js bulma-extensions-css-var.sass css/bulma-extensions-css-var.css --map --min",
-    "build:sass-vars": "node build.js bulma-extensions-css-var.sass css/bulma-extensions-css-var.css --themeable --full --map --min",
-    "build:rtl": "node build.js bulma-extensions-css-var.sass css/bulma-rtl.css --rtl --map --min",
-    "test:theme": "node build.js test/sass/theme.sass test/output/theme.css bulma-extensions-css-var.sass --themeable",
-    "deploy": "npm run build",
-    "start": "npm run build:sass -- --watch",
-    "rtl": "echo 'The rtl script has been deprecated use build:rtl instead' && npm run build:rtl --",
-    "build-clean": "echo 'The build-clean script has been deprecated use build:clean instead' && npm run build:clean --",
-    "build-sass": "echo 'The build-sass script has been deprecated use build:sass instead' && npm run build:sass --"
-  },
+  "license": "MIT",
+  "author": "Jeremy Thomas <bbxdesign@gmail.com> (https://jgthms.com)",
+  "main": "bulma-extensions-css-var.sass",
+  "unpkg": "css/bulma-extensions-css-var.css",
+  "style": "bulma/css/bulma-extensions-css-var.min.css",
   "bin": {
     "bulma-build-css": "build.js"
   },
@@ -54,5 +32,27 @@
     "LICENSE",
     "README.md"
   ],
-  "dependencies": {}
+  "scripts": {
+    "build": "npm run build:clean && npm run build:sass-vars",
+    "build-clean": "echo 'The build-clean script has been deprecated use build:clean instead' && npm run build:clean --",
+    "build-sass": "echo 'The build-sass script has been deprecated use build:sass instead' && npm run build:sass --",
+    "build:clean": "rimraf css",
+    "build:rtl": "node build.js bulma-extensions-css-var.sass css/bulma-rtl.css --rtl --map --min",
+    "build:sass": "node build.js bulma-extensions-css-var.sass css/bulma-extensions-css-var.css --map --min",
+    "build:sass-vars": "node build.js bulma-extensions-css-var.sass css/bulma-extensions-css-var.css --themeable --full --map --min",
+    "deploy": "npm run build",
+    "rtl": "echo 'The rtl script has been deprecated use build:rtl instead' && npm run build:rtl --",
+    "start": "npm run build:sass -- --watch",
+    "test:theme": "node build.js test/sass/theme.sass test/output/theme.css bulma-extensions-css-var.sass --themeable"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^9.8.4",
+    "clean-css": "^4.2.3",
+    "node-sass": "^4.14.1",
+    "postcss": "^7.0.32",
+    "postcss-calc": "^7.0.2",
+    "postcss-var-optimize": "^0.0.4",
+    "rimraf": "^3.0.2"
+  }
 }
