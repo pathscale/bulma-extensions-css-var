@@ -11,12 +11,7 @@ const {
   unwatch,
 } = require('./utils')
 
-let args = process.argv.slice(2)
-
-let options
-;[options, args] = partition(args, (arg) => {
-  return arg.charAt(0) === '-'
-})
+let [options, args] = partition(process.argv.slice(2), (arg) => arg.charAt(0) === '-')
 
 if (args.length < 2) {
   console.error(
