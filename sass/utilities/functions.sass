@@ -166,10 +166,10 @@
     @return change-color($color, $lightness: max($base-l, $target-l))
   @return $dark
 
-@function bulmaRgba($color, $alpha)
+@function bulmachange-color($color, $alpha: $alpha)
   @if type-of($color) != 'color'
     @return $color
-  @return rgba($color, $alpha)
+  @return change-color($color, $alpha: $alpha)
 
 @function bulmaDarken($color, $amount)
   @if type-of($color) != 'color'
@@ -480,4 +480,3 @@ $bulma_used_vars: ()
       @return $color
 
     @return change_color($color, $hue: $hue, $saturation: $saturation, $lightness: $lightness, $alpha: $alpha)
-
