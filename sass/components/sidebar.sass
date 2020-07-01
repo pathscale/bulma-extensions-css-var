@@ -36,6 +36,20 @@ $sidebar-mobile-breakpoint: $tablet !default
                     width: $sidebar-width
                     &.is-mini-expand-fixed
                         position: fixed
+            &:not(.is-mini-expand),
+            &.is-mini-expand:not(:hover) 
+                .menu-list 
+                    li 
+                        a 
+                            span:nth-child(2) 
+                                display: none
+                        ul 
+                            padding-left: 0
+                            li 
+                                a 
+                                    display: inline-block
+                .menu-label:not(:last-child) 
+                    margin-bottom: 0
                     
                 
         
@@ -83,5 +97,3 @@ $sidebar-mobile-breakpoint: $tablet !default
         background: $sidebar-background
         position: fixed
         z-index: 40
-    
-

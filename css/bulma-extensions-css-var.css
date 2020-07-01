@@ -127,6 +127,22 @@
   position: fixed;
 }
 
+.v-sidebar .sidebar-content.is-mini:not(.is-mini-expand) .menu-list li a span:nth-child(2), .v-sidebar .sidebar-content.is-mini.is-mini-expand:not(:hover) .menu-list li a span:nth-child(2) {
+  display: none;
+}
+
+.v-sidebar .sidebar-content.is-mini:not(.is-mini-expand) .menu-list li ul, .v-sidebar .sidebar-content.is-mini.is-mini-expand:not(:hover) .menu-list li ul {
+  padding-left: 0;
+}
+
+.v-sidebar .sidebar-content.is-mini:not(.is-mini-expand) .menu-list li ul li a, .v-sidebar .sidebar-content.is-mini.is-mini-expand:not(:hover) .menu-list li ul li a {
+  display: inline-block;
+}
+
+.v-sidebar .sidebar-content.is-mini:not(.is-mini-expand) .menu-label:not(:last-child), .v-sidebar .sidebar-content.is-mini.is-mini-expand:not(:hover) .menu-label:not(:last-child) {
+  margin-bottom: 0;
+}
+
 .v-sidebar .sidebar-content.is-static {
   position: static;
 }
@@ -838,7 +854,7 @@
 }
 
 .switch input[type=checkbox]:focus + .check, .switch input[type=checkbox]:active + .check {
-  box-shadow: 0 0 0.4em rgba(122, 122, 122, 0.6);
+  box-shadow: 0 0 0.5em rgba(122, 122, 122, 0.6);
 }
 
 .switch input[type=checkbox]:focus + .check.is-white-passive, .switch input[type=checkbox]:active + .check.is-white-passive {
@@ -1336,13 +1352,12 @@
 
 .accordion {
   display: flex;
-  background-color: var(--blm-white-ter);
   cursor: pointer;
+  width: 50%;
   padding: 10px 20px 10px 40px;
 }
 
 .accordion .accordion-trigger {
-  color: #eee;
   padding: 18px;
   border: none;
   outline: none;
@@ -1351,6 +1366,5 @@
 
 .accordion .accordion-content {
   padding: 18px;
-  color: #eee;
 }
 /*# sourceMappingURL=bulma-extensions-css-var.css.map */
