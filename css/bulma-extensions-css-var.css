@@ -838,91 +838,91 @@
 }
 
 .switch input[type=checkbox]:focus + .check, .switch input[type=checkbox]:active + .check {
-  box-shadow: 0 0 0.5em rgba(122, 122, 122, 0.6);
+  box-shadow: 0 0 0.4em rgba(122, 122, 122, 0.6);
 }
 
 .switch input[type=checkbox]:focus + .check.is-white-passive, .switch input[type=checkbox]:active + .check.is-white-passive {
-  box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0.4em white, 0.8;
 }
 
 .switch input[type=checkbox]:focus + .check.is-black-passive, .switch input[type=checkbox]:active + .check.is-black-passive {
-  box-shadow: 0 0 0.5em rgba(10, 10, 10, 0.8);
+  box-shadow: 0 0 0.4em #0a0a0a, 0.8;
 }
 
 .switch input[type=checkbox]:focus + .check.is-light-passive, .switch input[type=checkbox]:active + .check.is-light-passive {
-  box-shadow: 0 0 0.5em rgba(var(--blm-white-ter), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-white-ter), 0.8;
 }
 
 .switch input[type=checkbox]:focus + .check.is-dark-passive, .switch input[type=checkbox]:active + .check.is-dark-passive {
-  box-shadow: 0 0 0.5em rgba(var(--blm-grey-darker), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-grey-darker), 0.8;
 }
 
 .switch input[type=checkbox]:focus + .check.is-primary-passive, .switch input[type=checkbox]:active + .check.is-primary-passive {
-  box-shadow: 0 0 0.5em rgba(var(--blm-turquoise), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-turquoise), 0.8;
 }
 
 .switch input[type=checkbox]:focus + .check.is-link-passive, .switch input[type=checkbox]:active + .check.is-link-passive {
-  box-shadow: 0 0 0.5em rgba(var(--blm-blue), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-blue), 0.8;
 }
 
 .switch input[type=checkbox]:focus + .check.is-info-passive, .switch input[type=checkbox]:active + .check.is-info-passive {
-  box-shadow: 0 0 0.5em rgba(var(--blm-cyan), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-cyan), 0.8;
 }
 
 .switch input[type=checkbox]:focus + .check.is-success-passive, .switch input[type=checkbox]:active + .check.is-success-passive {
-  box-shadow: 0 0 0.5em rgba(var(--blm-green), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-green), 0.8;
 }
 
 .switch input[type=checkbox]:focus + .check.is-warning-passive, .switch input[type=checkbox]:active + .check.is-warning-passive {
-  box-shadow: 0 0 0.5em rgba(var(--blm-yellow), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-yellow), 0.8;
 }
 
 .switch input[type=checkbox]:focus + .check.is-danger-passive, .switch input[type=checkbox]:active + .check.is-danger-passive {
-  box-shadow: 0 0 0.5em rgba(var(--blm-red), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-red), 0.8;
 }
 
 .switch input[type=checkbox]:focus:checked + .check, .switch input[type=checkbox]:active:checked + .check {
-  box-shadow: 0 0 0.5em rgba(var(--blm-turquoise), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-turquoise);
 }
 
 .switch input[type=checkbox]:focus:checked + .check.is-white, .switch input[type=checkbox]:active:checked + .check.is-white {
-  box-shadow: 0 0 0.5em rgba(255, 255, 255, 0.8);
+  box-shadow: 0 0 0.4em white, 0.8;
 }
 
 .switch input[type=checkbox]:focus:checked + .check.is-black, .switch input[type=checkbox]:active:checked + .check.is-black {
-  box-shadow: 0 0 0.5em rgba(10, 10, 10, 0.8);
+  box-shadow: 0 0 0.4em #0a0a0a, 0.8;
 }
 
 .switch input[type=checkbox]:focus:checked + .check.is-light, .switch input[type=checkbox]:active:checked + .check.is-light {
-  box-shadow: 0 0 0.5em rgba(var(--blm-white-ter), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-white-ter), 0.8;
 }
 
 .switch input[type=checkbox]:focus:checked + .check.is-dark, .switch input[type=checkbox]:active:checked + .check.is-dark {
-  box-shadow: 0 0 0.5em rgba(var(--blm-grey-darker), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-grey-darker), 0.8;
 }
 
 .switch input[type=checkbox]:focus:checked + .check.is-primary, .switch input[type=checkbox]:active:checked + .check.is-primary {
-  box-shadow: 0 0 0.5em rgba(var(--blm-turquoise), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-turquoise), 0.8;
 }
 
 .switch input[type=checkbox]:focus:checked + .check.is-link, .switch input[type=checkbox]:active:checked + .check.is-link {
-  box-shadow: 0 0 0.5em rgba(var(--blm-blue), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-blue), 0.8;
 }
 
 .switch input[type=checkbox]:focus:checked + .check.is-info, .switch input[type=checkbox]:active:checked + .check.is-info {
-  box-shadow: 0 0 0.5em rgba(var(--blm-cyan), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-cyan), 0.8;
 }
 
 .switch input[type=checkbox]:focus:checked + .check.is-success, .switch input[type=checkbox]:active:checked + .check.is-success {
-  box-shadow: 0 0 0.5em rgba(var(--blm-green), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-green), 0.8;
 }
 
 .switch input[type=checkbox]:focus:checked + .check.is-warning, .switch input[type=checkbox]:active:checked + .check.is-warning {
-  box-shadow: 0 0 0.5em rgba(var(--blm-yellow), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-yellow), 0.8;
 }
 
 .switch input[type=checkbox]:focus:checked + .check.is-danger, .switch input[type=checkbox]:active:checked + .check.is-danger {
-  box-shadow: 0 0 0.5em rgba(var(--blm-red), 0.8);
+  box-shadow: 0 0 0.4em var(--blm-red), 0.8;
 }
 
 .switch .control-label {
@@ -934,87 +934,87 @@
 }
 
 .switch:hover input[type=checkbox] + .check.is-white-passive {
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
 }
 
 .switch:hover input[type=checkbox] + .check.is-black-passive {
-  background: rgba(10, 10, 10, 0.9);
+  background: #0a0a0a;
 }
 
 .switch:hover input[type=checkbox] + .check.is-light-passive {
-  background: rgba(var(--blm-white-ter), 0.9);
+  background: var(--blm-white-ter);
 }
 
 .switch:hover input[type=checkbox] + .check.is-dark-passive {
-  background: rgba(var(--blm-grey-darker), 0.9);
+  background: var(--blm-grey-darker);
 }
 
 .switch:hover input[type=checkbox] + .check.is-primary-passive {
-  background: rgba(var(--blm-turquoise), 0.9);
+  background: var(--blm-turquoise);
 }
 
 .switch:hover input[type=checkbox] + .check.is-link-passive {
-  background: rgba(var(--blm-blue), 0.9);
+  background: var(--blm-blue);
 }
 
 .switch:hover input[type=checkbox] + .check.is-info-passive {
-  background: rgba(var(--blm-cyan), 0.9);
+  background: var(--blm-cyan);
 }
 
 .switch:hover input[type=checkbox] + .check.is-success-passive {
-  background: rgba(var(--blm-green), 0.9);
+  background: var(--blm-green);
 }
 
 .switch:hover input[type=checkbox] + .check.is-warning-passive {
-  background: rgba(var(--blm-yellow), 0.9);
+  background: var(--blm-yellow);
 }
 
 .switch:hover input[type=checkbox] + .check.is-danger-passive {
-  background: rgba(var(--blm-red), 0.9);
+  background: var(--blm-red);
 }
 
 .switch:hover input[type=checkbox]:checked + .check {
-  background: rgba(var(--blm-turquoise), 0.9);
+  background: var(--blm-turquoise);
 }
 
 .switch:hover input[type=checkbox]:checked + .check.is-white {
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
 }
 
 .switch:hover input[type=checkbox]:checked + .check.is-black {
-  background: rgba(10, 10, 10, 0.9);
+  background: #0a0a0a;
 }
 
 .switch:hover input[type=checkbox]:checked + .check.is-light {
-  background: rgba(var(--blm-white-ter), 0.9);
+  background: var(--blm-white-ter);
 }
 
 .switch:hover input[type=checkbox]:checked + .check.is-dark {
-  background: rgba(var(--blm-grey-darker), 0.9);
+  background: var(--blm-grey-darker);
 }
 
 .switch:hover input[type=checkbox]:checked + .check.is-primary {
-  background: rgba(var(--blm-turquoise), 0.9);
+  background: var(--blm-turquoise);
 }
 
 .switch:hover input[type=checkbox]:checked + .check.is-link {
-  background: rgba(var(--blm-blue), 0.9);
+  background: var(--blm-blue);
 }
 
 .switch:hover input[type=checkbox]:checked + .check.is-info {
-  background: rgba(var(--blm-cyan), 0.9);
+  background: var(--blm-cyan);
 }
 
 .switch:hover input[type=checkbox]:checked + .check.is-success {
-  background: rgba(var(--blm-green), 0.9);
+  background: var(--blm-green);
 }
 
 .switch:hover input[type=checkbox]:checked + .check.is-warning {
-  background: rgba(var(--blm-yellow), 0.9);
+  background: var(--blm-yellow);
 }
 
 .switch:hover input[type=checkbox]:checked + .check.is-danger {
-  background: rgba(var(--blm-red), 0.9);
+  background: var(--blm-red);
 }
 
 .switch.is-rounded input[type=checkbox] + .check {
@@ -1036,7 +1036,7 @@
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-white-passive {
-  border: 0.1rem solid rgba(255, 255, 255, 0.9);
+  border: 0.1rem solid white;
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-white-passive:before {
@@ -1044,11 +1044,11 @@
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-white-passive:hover {
-  border-color: rgba(255, 255, 255, 0.9);
+  border-color: white;
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-black-passive {
-  border: 0.1rem solid rgba(10, 10, 10, 0.9);
+  border: 0.1rem solid #0a0a0a;
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-black-passive:before {
@@ -1056,11 +1056,11 @@
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-black-passive:hover {
-  border-color: rgba(10, 10, 10, 0.9);
+  border-color: #0a0a0a;
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-light-passive {
-  border: 0.1rem solid rgba(var(--blm-white-ter), 0.9);
+  border: 0.1rem solid var(--blm-white-ter);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-light-passive:before {
@@ -1068,11 +1068,11 @@
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-light-passive:hover {
-  border-color: rgba(var(--blm-white-ter), 0.9);
+  border-color: var(--blm-white-ter);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-dark-passive {
-  border: 0.1rem solid rgba(var(--blm-grey-darker), 0.9);
+  border: 0.1rem solid var(--blm-grey-darker);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-dark-passive:before {
@@ -1080,11 +1080,11 @@
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-dark-passive:hover {
-  border-color: rgba(var(--blm-grey-darker), 0.9);
+  border-color: var(--blm-grey-darker);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-primary-passive {
-  border: 0.1rem solid rgba(var(--blm-turquoise), 0.9);
+  border: 0.1rem solid var(--blm-turquoise);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-primary-passive:before {
@@ -1092,11 +1092,11 @@
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-primary-passive:hover {
-  border-color: rgba(var(--blm-turquoise), 0.9);
+  border-color: var(--blm-turquoise);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-link-passive {
-  border: 0.1rem solid rgba(var(--blm-blue), 0.9);
+  border: 0.1rem solid var(--blm-blue);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-link-passive:before {
@@ -1104,11 +1104,11 @@
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-link-passive:hover {
-  border-color: rgba(var(--blm-blue), 0.9);
+  border-color: var(--blm-blue);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-info-passive {
-  border: 0.1rem solid rgba(var(--blm-cyan), 0.9);
+  border: 0.1rem solid var(--blm-cyan);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-info-passive:before {
@@ -1116,11 +1116,11 @@
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-info-passive:hover {
-  border-color: rgba(var(--blm-cyan), 0.9);
+  border-color: var(--blm-cyan);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-success-passive {
-  border: 0.1rem solid rgba(var(--blm-green), 0.9);
+  border: 0.1rem solid var(--blm-green);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-success-passive:before {
@@ -1128,11 +1128,11 @@
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-success-passive:hover {
-  border-color: rgba(var(--blm-green), 0.9);
+  border-color: var(--blm-green);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-warning-passive {
-  border: 0.1rem solid rgba(var(--blm-yellow), 0.9);
+  border: 0.1rem solid var(--blm-yellow);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-warning-passive:before {
@@ -1140,11 +1140,11 @@
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-warning-passive:hover {
-  border-color: rgba(var(--blm-yellow), 0.9);
+  border-color: var(--blm-yellow);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-danger-passive {
-  border: 0.1rem solid rgba(var(--blm-red), 0.9);
+  border: 0.1rem solid var(--blm-red);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-danger-passive:before {
@@ -1152,7 +1152,7 @@
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-danger-passive:hover {
-  border-color: rgba(var(--blm-red), 0.9);
+  border-color: var(--blm-red);
 }
 
 .switch.is-outlined input[type=checkbox] + .check:before {
@@ -1264,47 +1264,47 @@
 
 .switch.is-outlined:hover input[type=checkbox]:checked + .check {
   background: transparent;
-  border-color: rgba(var(--blm-turquoise), 0.9);
+  border-color: var(--blm-turquoise);
 }
 
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-white {
-  border-color: rgba(255, 255, 255, 0.9);
+  border-color: white;
 }
 
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-black {
-  border-color: rgba(10, 10, 10, 0.9);
+  border-color: #0a0a0a;
 }
 
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-light {
-  border-color: rgba(var(--blm-white-ter), 0.9);
+  border-color: var(--blm-white-ter);
 }
 
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-dark {
-  border-color: rgba(var(--blm-grey-darker), 0.9);
+  border-color: var(--blm-grey-darker);
 }
 
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-primary {
-  border-color: rgba(var(--blm-turquoise), 0.9);
+  border-color: var(--blm-turquoise);
 }
 
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-link {
-  border-color: rgba(var(--blm-blue), 0.9);
+  border-color: var(--blm-blue);
 }
 
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-info {
-  border-color: rgba(var(--blm-cyan), 0.9);
+  border-color: var(--blm-cyan);
 }
 
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-success {
-  border-color: rgba(var(--blm-green), 0.9);
+  border-color: var(--blm-green);
 }
 
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-warning {
-  border-color: rgba(var(--blm-yellow), 0.9);
+  border-color: var(--blm-yellow);
 }
 
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-danger {
-  border-color: rgba(var(--blm-red), 0.9);
+  border-color: var(--blm-red);
 }
 
 .switch.is-small {

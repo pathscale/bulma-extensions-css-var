@@ -69,14 +69,14 @@ $switch-active-background-color: $primary !default
                 @each $name, $pair in $colors 
                     $color: nth($pair, 1)
                     &.is-#{$name}-passive 
-                        box-shadow: 0 0 0.5em rgba($color, 0.8)
+                        box-shadow: 0 0 0.4em $color, 0.8
                     
             &:checked + .check
-                box-shadow: 0 0 0.5em rgba($switch-active-background-color, 0.8)
+                box-shadow: 0 0 0.4em $switch-active-background-color
                 @each $name, $pair in $colors
                     $color: nth($pair, 1)
                     &.is-#{$name}
-                        box-shadow: 0 0 0.5em rgba($color, 0.8)
+                        box-shadow: 0 0 0.4em $color, 0.8
                 
     .control-label 
         padding-left: 0.5em
@@ -86,14 +86,14 @@ $switch-active-background-color: $primary !default
             @each $name, $pair in $colors 
                 $color: nth($pair, 1)
                 &.is-#{$name}-passive
-                    background: rgba($color, 0.9)
+                    background: $color
 
         input[type=checkbox]:checked + .check
-            background: rgba($switch-active-background-color, 0.9)
+            background: $switch-active-background-color
             @each $name, $pair in $colors
                 $color: nth($pair, 1)
                 &.is-#{$name}
-                    background: rgba($color, 0.9)
+                    background: $color
     &.is-rounded 
         input[type=checkbox] 
             + .check
@@ -111,11 +111,11 @@ $switch-active-background-color: $primary !default
                 @each $name, $pair in $colors
                     $color: nth($pair, 1)
                     &.is-#{$name}-passive
-                        border: .1rem solid rgba($color, 0.9)
+                        border: .1rem solid $color
                         &:before
                             background: $color
                         &:hover
-                            border-color: rgba($color, 0.9)
+                            border-color: $color
                 &:before
                     background: $grey-light
             &:checked + .check
@@ -135,11 +135,11 @@ $switch-active-background-color: $primary !default
                 border-color: rgba($grey-light, 0.9)
             input[type=checkbox]:checked + .check 
                 background: transparent
-                border-color: rgba($switch-active-background-color, 0.9)
+                border-color: $switch-active-background-color
                 @each $name, $pair in $colors
                     $color: nth($pair, 1)
                     &.is-#{$name}
-                        border-color: rgba($color, 0.9)
+                        border-color: $color
     &.is-small 
         @include control-small
     &.is-medium
