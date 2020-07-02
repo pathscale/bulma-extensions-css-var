@@ -1378,18 +1378,17 @@
 .accordion {
   display: flex;
   cursor: pointer;
-  width: 50%;
-  padding: 10px 20px 10px 40px;
+  padding: 10px;
 }
 
 .accordion .accordion-trigger {
-  padding: 17px;
   border: none;
   outline: none;
-  font-size: 15px;
 }
 
 .accordion .accordion-content {
-  padding: 17px;
+  flex: 1;
+  height: 100%;
+  margin: 0px 10px 0px 10px;
 }
 /*# sourceMappingURL=bulma-extensions-css-var.css.map */
