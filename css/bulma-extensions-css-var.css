@@ -1,6 +1,31 @@
 /*! bulma.io v0.9.0 | MIT License | github.com/jgthms/bulma */
-.is-animated {
-  transition: height 0.5s linear;
+.is-height-animated {
+  transition: height 0.5s ease-in;
+  overflow: hidden;
+}
+
+.is-max-height-animated {
+  transition: max-height 0.5s ease-in;
+  overflow: hidden;
+}
+
+.is-max-width-animated {
+  transition: max-width 0.5s ease-in;
+  overflow: hidden;
+}
+
+.is-min-height-animated {
+  transition: min-height 0.5s ease-in;
+  overflow: hidden;
+}
+
+.is-min-width-animated {
+  transition: min-width 0.5s ease-in;
+  overflow: hidden;
+}
+
+.is-width-animated {
+  transition: width 0.5s ease-in;
   overflow: hidden;
 }
 

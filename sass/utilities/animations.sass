@@ -1,6 +1,10 @@
-.is-animated 
-    transition: height 0.5s linear 
-    overflow: hidden
+$dimensions: height max-height max-width min-height min-width width
+
+@each $dimension in $dimensions 
+	.is-#{$dimension}-animated
+		transition: #{$dimension} 0.5s ease-in
+		overflow: hidden
+	
 .is-fade 
 	opacity: 1
 	animation-name: fadeInOpacity
