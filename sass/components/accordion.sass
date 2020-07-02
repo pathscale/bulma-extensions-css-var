@@ -1,6 +1,5 @@
-$accordion-padding: 10px 20px 10px 40px !default
-$accordion-child-padding: 17px !default
-$accordion-trigger-font-size: 15px !default
+$accordion-padding: 10px
+$accordion-child-margin: 0px 10px 0px 10px
 
 .is-vertical
     flex-direction: row
@@ -9,13 +8,10 @@ $accordion-trigger-font-size: 15px !default
 .accordion
     display: flex
     cursor: pointer
-    width: 50%
     padding: $accordion-padding
     .accordion-trigger 
-        padding: $accordion-child-padding
         border: none
         outline: none
-        font-size: $accordion-trigger-font-size
     .accordion-content
         padding: $accordion-child-padding
     
