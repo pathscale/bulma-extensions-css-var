@@ -1367,28 +1367,62 @@
   color: #7a7a7a;
 }
 
-.is-vertical {
+.accordion-menu {
+  display: flex;
   flex-direction: row;
-}
-
-.is-horizontal {
-  flex-direction: column;
+  align-items: center;
+  width: 320px;
 }
 
 .accordion {
-  display: flex;
-  cursor: pointer;
-  padding: 10px;
+  flex: 1;
+  height: 100%;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  transition: flex 0.8s ease;
 }
 
 .accordion .accordion-trigger {
-  border: none;
-  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: inherit;
+  line-height: normal;
+  position: relative;
+  min-width: 32px;
+  padding: 0px 10px;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
 }
 
-.accordion .accordion-content {
-  flex: 1;
-  height: 100%;
+.accordion:hover {
+  flex: 4;
+  background-color: #292929;
+}
+
+.accordion-menu:hover {
+  width: 320px;
+}
+
+.accordion-content {
+  padding: 0px 8px;
+}
+
+.message-wrapper {
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.msg-left {
+  align-self: flex-start;
+}
+
+.msg-right {
+  align-self: flex-end;
+}
+
+.msg-time {
   margin: 0px 10px 0px 10px;
 }
 /*# sourceMappingURL=bulma-extensions-css-var.css.map */
