@@ -1,15 +1,34 @@
-.is-vertical
-    flex-direction: row
-.is-horizontal
-    flex-direction: column
+.accordion-menu
+  display: flex
+  flex-direction: row
+  align-items: center
+  width: 320px
+
 .accordion
+  flex: 1
+  height: 100%
+  -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12)
+  transition: flex 0.8s ease
+
+  .accordion-trigger
     display: flex
     align-items: center
-    cursor: pointer
-    .accordion-trigger 
-        border: none
-        outline: none
-        padding: 0px 20px
-    .accordion-content
-        flex: 1
-    
+    justify-content: inherit
+    line-height: normal
+    position: relative
+    min-width: 32px
+    padding: 0px 10px
+    height: 100%
+    width: 100%
+    border-radius: 0
+
+  &:hover
+    flex: 4
+    background-color: #292929
+
+.accordion-menu:hover
+  width: 320px
+
+.accordion-content
+  padding: 0px 8px
