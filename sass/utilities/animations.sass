@@ -1,15 +1,16 @@
 $dimensions: height max-height max-width min-height min-width width
+$transition-timing-function: ease-in
 
 @each $dimension in $dimensions 
 	.is-#{$dimension}-animated
-		transition: #{$dimension} 0.5s ease-in
+		transition: #{$dimension} 0.5s $transition-timing-function 
 		overflow: hidden
 	
 .is-fade 
 	opacity: 1
 	animation-name: fadeInOpacity
 	animation-iteration-count: 1
-	animation-timing-function: ease-in
+	animation-timing-function: $transition-timing-function 
 	animation-duration: 0.75s
 
 @keyframes fadeInOpacity 
@@ -17,3 +18,13 @@ $dimensions: height max-height max-width min-height min-width width
 		opacity: 0
 	100% 
 		opacity: 1
+
+.slide-right-enter-active,
+.slide-right-leave-active,
+.slide-left-enter-active,
+.slide-left-leave-active 
+    transition: transform 200ms $transition-timing-function 
+.slide-left-leave-to, .slide-right-enter 
+    transform: translate3d(-100%, 0, 0)
+.slide-left-enter, .slide-right-leave-to 
+    transform: translate3d(100%, 0, 0)

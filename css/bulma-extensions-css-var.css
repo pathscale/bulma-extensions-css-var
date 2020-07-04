@@ -59,6 +59,21 @@
   }
 }
 
+.slide-right-enter-active,
+.slide-right-leave-active,
+.slide-left-enter-active,
+.slide-left-leave-active {
+  transition: transform 200ms ease-in;
+}
+
+.slide-left-leave-to, .slide-right-enter {
+  transform: translate3d(-100%, 0, 0);
+}
+
+.slide-left-enter, .slide-right-leave-to {
+  transform: translate3d(100%, 0, 0);
+}
+
 .switch {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
