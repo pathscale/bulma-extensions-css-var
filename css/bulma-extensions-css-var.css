@@ -1405,41 +1405,58 @@
 .accordion-menu {
   display: flex;
   flex-direction: row;
-  align-items: center;
   width: 320px;
 }
 
 .accordion {
   flex: 1;
   height: 100%;
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   transition: flex 0.8s ease;
+  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.accordion-default:hover {
+  background-color: #2F3133;
+  flex: 4;
+}
+
+.accordion-active {
+  background-color: #868a88;
+  flex: 4;
+}
+
+.accordion-active .accordion-content {
+  display: inline-block;
+}
+
+.accordion-default:hover .accordion-active {
+  flex: 1;
+}
+
+.accordion-content {
+  padding: 0px 8px;
+  display: none;
+}
+
+.accordion-default:hover .accordion-active .accordion-content {
+  display: none;
+}
+
+.accordion-default:hover .accordion-content {
+  display: inline-block;
 }
 
 .accordion .accordion-trigger {
   display: flex;
   align-items: center;
-  justify-content: inherit;
+  justify-content: center;
   line-height: normal;
   position: relative;
+  padding: 0px 8px;
   min-width: 32px;
-  padding: 0px 10px;
   height: 100%;
   width: 100%;
   border-radius: 0;
-}
-
-.accordion:hover {
-  flex: 4;
-  background-color: #292929;
-}
-
-.accordion-menu:hover {
-  width: 320px;
-}
-
-.accordion-content {
-  padding: 0px 8px;
 }
 
 .message-wrapper {
