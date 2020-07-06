@@ -59,6 +59,26 @@
   }
 }
 
+.slide-enter-active {
+  transition: max-height 0.5s ease-in;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.slide-leave-active {
+  transition: max-height 0.5s ease-in;
+  max-height: 1000px;
+  overflow: hidden;
+}
+
+.slide-enter-to, .slide-leave {
+  max-height: 1000px;
+}
+
+.slide-enter, .slide-leave-to {
+  max-height: 0;
+}
+
 .slide-right-enter-active,
 .slide-right-leave-active,
 .slide-left-enter-active,
@@ -156,7 +176,7 @@
 }
 
 .v-sidebar .sidebar-content.is-mini.is-mini-expand:hover {
-  transition: width 150ms ease-out;
+  transition: width 0.5s ease-out;
 }
 
 .v-sidebar .sidebar-content.is-mini.is-mini-expand:hover:not(.is-fullwidth) {
@@ -188,7 +208,7 @@
 }
 
 .v-sidebar .sidebar-content.is-absolute, .v-sidebar .sidebar-content.is-static {
-  transition: width 150ms ease-out;
+  transition: width 0.5s ease-out;
 }
 
 .v-sidebar .sidebar-content.is-fullwidth {
@@ -736,7 +756,7 @@
   padding: 0.2em;
   background: #b5b5b5;
   border-radius: 4px;
-  transition: background 150ms ease-out, box-shadow 150ms ease-out;
+  transition: background 0.5s ease-out, box-shadow 0.5s ease-out;
 }
 
 .switch input[type=checkbox] + .check.is-white-passive, .switch input[type=checkbox] + .check:hover {
@@ -827,7 +847,7 @@
   height: 1.175em;
   background: var(--blm-white-ter);
   box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.05), 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.05);
-  transition: transform 150ms ease-out;
+  transition: transform 0.5s ease-out;
   will-change: transform;
   transform-origin: left;
 }
