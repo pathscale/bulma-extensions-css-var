@@ -226,7 +226,7 @@
   align-content: stretch;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   .v-sidebar .sidebar-content.is-mini-mobile {
     width: 80px;
   }
