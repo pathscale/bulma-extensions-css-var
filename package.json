@@ -1,15 +1,9 @@
 {
   "name": "@pathscale/bulma-extensions-css-var",
   "version": "0.0.15",
-  "description": "Modern CSS framework based on Flexbox",
-  "keywords": [
-    "css",
-    "sass",
-    "flexbox",
-    "responsive",
-    "framework"
-  ],
-  "homepage": "https://bulma-extensions-css-var.io",
+  "description": "Vue3-ui extension css",
+  "keywords": [],
+  "homepage": "https://github.com/pathscale/bulma-extensions-css-var",
   "bugs": {
     "url": "https://github.com/pathscale/bulma-extensions-css-var/issues"
   },
@@ -18,7 +12,6 @@
     "url": "git+https://github.com/pathscale/bulma-extensions-css-var.git"
   },
   "license": "MIT",
-  "author": "Jeremy Thomas <bbxdesign@gmail.com> (https://jgthms.com)",
   "main": "bulma-extensions-css-var.sass",
   "unpkg": "css/bulma-extensions-css-var.css",
   "style": "bulma/css/bulma-extensions-css-var.min.css",
