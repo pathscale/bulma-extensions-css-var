@@ -1408,6 +1408,14 @@
   width: 320px;
 }
 
+.accordion-menu .accordion-active {
+  flex: 1;
+}
+
+.accordion-menu .accordion-active:hover {
+  flex: 4;
+}
+
 .accordion-type-hover {
   flex: 1;
   height: 100%;
