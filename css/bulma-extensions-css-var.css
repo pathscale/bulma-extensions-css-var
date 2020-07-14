@@ -1412,8 +1412,16 @@
   flex: 1;
 }
 
+.accordion-menu:hover .accordion-active .accordion-trigger .accordion-content {
+  display: none;
+}
+
 .accordion-menu:hover .accordion-active:hover {
   flex: 4;
+}
+
+.accordion-menu:hover .accordion-active:hover .accordion-trigger .accordion-content {
+  display: inline-block;
 }
 
 .accordion-type-hover {
