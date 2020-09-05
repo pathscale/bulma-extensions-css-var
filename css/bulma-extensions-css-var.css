@@ -253,7 +253,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  background: var(--blm-black);
+  background: var(--blm-modal-bg-bg-clr);
   position: fixed;
   z-index: 40;
 }
