@@ -123,6 +123,12 @@
   user-select: none;
 }
 
+.error {
+  min-height: 20px;
+  font-size: 14px;
+  color: #FF3333;
+}
+
 .v-sidebar .sidebar-content {
   background-color: var(--blm-white-ter);
   box-shadow: 5px 0px 13px 3px rgba(10, 10, 10, 0.1);
