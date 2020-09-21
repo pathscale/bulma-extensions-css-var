@@ -1540,4 +1540,17 @@
 .msg-time {
   margin: 0px 10px 0px 10px;
 }
+
+.data-grid {
+  background-color: white;
+}
+
+.tableHeader {
+  display: block;
+}
+
+.tableFooter {
+  margin: auto;
+  width: 30%;
+}
 /*# sourceMappingURL=bulma-extensions-css-var.css.map */
