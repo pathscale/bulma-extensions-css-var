@@ -1545,12 +1545,17 @@
   background-color: white;
 }
 
+.tableHeader {
+  display: block;
+}
+
 .sticky-table {
   height: 300px;
   overflow-y: auto !important;
 }
 
 .sticky-row {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   background-color: var(--blm-prim);
@@ -1558,13 +1563,10 @@
 }
 
 .sticky-column {
+  position: -webkit-sticky;
   position: sticky;
   left: 0;
   background-color: var(--blm-prim);
   color: white;
-}
-
-.tableHeader {
-  display: block;
 }
 /*# sourceMappingURL=bulma-extensions-css-var.css.map */
