@@ -122,10 +122,9 @@
   user-select: none;
 }
 
-.error {
-  min-height: 20px;
-  font-size: 14px;
-  color: #FF3333;
+.is-disabled {
+  pointer-events: none;
+  opacity: 0.65;
 }
 
 .v-sidebar .sidebar-content {
