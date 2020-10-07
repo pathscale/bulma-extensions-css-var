@@ -12,7 +12,7 @@
     "url": "git+https://github.com/pathscale/bulma-extensions-css-var.git"
   },
   "license": "MIT",
-  "main": "bulma-extensions-css-var.sass",
+  "main": "css/bulma-extensions-css-var.css",
   "unpkg": "css/bulma-extensions-css-var.css",
   "style": "bulma/css/bulma-extensions-css-var.min.css",
   "bin": {
