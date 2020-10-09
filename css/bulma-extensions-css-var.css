@@ -1,3 +1,5 @@
+/* Animations */
+
 .is-height-animated {
   transition: height 0.5s ease-in;
   overflow: hidden;
@@ -114,18 +116,14 @@
   transform: translate3d(100%, 0, 0);
 }
 
-.switch {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
+/* Controls */
 
 .is-disabled {
   pointer-events: none;
   opacity: 0.5;
 }
+
+/* v-sidebar */
 
 .v-sidebar .sidebar-content {
   background-color: var(--blm-white-ter);
@@ -282,6 +280,8 @@
   position: fixed;
   z-index: 40;
 }
+
+/* v-tooltip */
 
 .v-tooltip {
   position: relative;
@@ -750,6 +750,16 @@
 
 .v-tooltip.is-animated:before, .v-tooltip.is-animated:after {
   transition: opacity 86ms ease-out, visibility 86ms ease-out;
+}
+
+/* v-switch */
+
+.switch {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .switch {
@@ -1427,6 +1437,8 @@
   color: #7a7a7a;
 }
 
+/* v-accordion */
+
 .accordion-menu {
   display: flex;
   flex-direction: row;
@@ -1520,6 +1532,8 @@
   cursor: pointer;
 }
 
+/* Messages */
+
 .message-wrapper {
   padding: 10px;
   margin: 0;
@@ -1539,6 +1553,8 @@
   margin: 0px 10px 0px 10px;
 }
 
+
+/* Table */
 .data-grid {
   background-color: white;
 }
