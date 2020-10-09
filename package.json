@@ -26,8 +26,7 @@
     "README.md"
   ],
   "scripts": {
-    "rtl": "echo 'The rtl script has been deprecated use build:rtl instead' && npm run build:rtl --",
-    "test:theme": "node build.js test/sass/theme.sass test/output/theme.css bulma-extensions-css-var.sass --themeable"
+    "rtl": "echo 'The rtl script has been deprecated use build:rtl instead' && npm run build:rtl --"
   },
   "dependencies": {},
   "devDependencies": {
