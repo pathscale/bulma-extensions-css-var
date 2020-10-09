@@ -1,6 +1,6 @@
 {
   "name": "@pathscale/bulma-extensions-css-var",
-  "version": "0.0.38",
+  "version": "0.0.39",
   "description": "Vue3-ui extension css",
   "keywords": [],
   "homepage": "https://github.com/pathscale/bulma-extensions-css-var",
@@ -15,9 +15,6 @@
   "main": "css/bulma-extensions-css-var.css",
   "unpkg": "css/bulma-extensions-css-var.css",
   "style": "bulma/css/bulma-extensions-css-var.min.css",
-  "bin": {
-    "bulma-build-css": "build.js"
-  },
   "files": [
     "css",
     "sass",
