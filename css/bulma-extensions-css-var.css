@@ -1640,7 +1640,7 @@ ol {
   width: 25px;
 }
 
-.is-active::after {
+.timeline > .is-active::after {
   filter: invert(70%) sepia(55%) saturate(462%) hue-rotate(86deg) brightness(86%) contrast(91%) !important;
 }
 
