@@ -1,5 +1,3 @@
-/* Animations */
-
 .is-height-animated {
   transition: height 0.5s ease-in;
   overflow: hidden;
@@ -116,14 +114,18 @@
   transform: translate3d(100%, 0, 0);
 }
 
-/* Controls */
+.switch {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
 .is-disabled {
   pointer-events: none;
   opacity: 0.5;
 }
-
-/* v-sidebar */
 
 .v-sidebar .sidebar-content {
   background-color: var(--blm-white-ter);
@@ -280,8 +282,6 @@
   position: fixed;
   z-index: 40;
 }
-
-/* v-tooltip */
 
 .v-tooltip {
   position: relative;
@@ -750,16 +750,6 @@
 
 .v-tooltip.is-animated:before, .v-tooltip.is-animated:after {
   transition: opacity 86ms ease-out, visibility 86ms ease-out;
-}
-
-/* v-switch */
-
-.switch {
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 .switch {
@@ -1437,8 +1427,6 @@
   color: #7a7a7a;
 }
 
-/* v-accordion */
-
 .accordion-menu {
   display: flex;
   flex-direction: row;
@@ -1532,8 +1520,6 @@
   cursor: pointer;
 }
 
-/* Messages */
-
 .message-wrapper {
   padding: 10px;
   margin: 0;
@@ -1553,8 +1539,6 @@
   margin: 0px 10px 0px 10px;
 }
 
-
-/* Table */
 .data-grid {
   background-color: white;
 }
@@ -1590,7 +1574,6 @@
   align-items: center;
 }
 
-/* Progress */
 .progress-wrapper {
   position: relative;
 }
@@ -1606,8 +1589,6 @@
 .progress-value .more-than-half {
   color: 'white';
 }
-
-/* Timeline */
 
 ol {
   list-style-type: none;
@@ -1633,7 +1614,8 @@ ol {
 .timeline > li::after {
   content: '';
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' aria-hidden='true' viewBox='0 0 32 32' focusable='false'%3E%3Ccircle stroke='none' fill='black' cx='16' cy='16' r='10'%3E%3C/circle%3E%3C/svg%3E");
-  filter: invert(78%) sepia(15%) saturate(0%) hue-rotate(198deg) brightness(104%) contrast(74%);
+  -webkit-filter: invert(78%) sepia(15%) saturate(0%) hue-rotate(198deg) brightness(104%) contrast(74%);
+          filter: invert(78%) sepia(15%) saturate(0%) hue-rotate(198deg) brightness(104%) contrast(74%);
   position: absolute;
   left: -6px;
   top: 11px;
@@ -1642,7 +1624,7 @@ ol {
 }
 
 .timeline > .is-active::after {
-  filter: invert(70%) sepia(55%) saturate(462%) hue-rotate(86deg) brightness(86%) contrast(91%) !important;
+  -webkit-filter: invert(70%) sepia(55%) saturate(462%) hue-rotate(86deg) brightness(86%) contrast(91%) !important;
+          filter: invert(70%) sepia(55%) saturate(462%) hue-rotate(86deg) brightness(86%) contrast(91%) !important;
 }
-
 /*# sourceMappingURL=bulma-extensions-css-var.css.map */
