@@ -2304,30 +2304,30 @@ input[type="range"].slider.is-danger + output {
   color: #fff;
 }
 
-.pagination-next, .pagination-previous {
+.pagination-next-previous {
   padding-left: 0.5em;
   padding-right: 0.5em;
 }
 
-.pagination-next.is-disabled, .pagination-previous.is-disabled {
+.pagination-next.is-disabled {
   pointer-events: none;
   cursor: not-allowed;
   opacity: 0.5;
 }
 
-.pagination-next.is-disabled.is-simple, .pagination-previous.is-disabled.is-simple {
+.pagination.is-simple {
   justify-content: normal;
 }
 
-.pagination-next.is-disabled.is-simple.is-centered, .pagination-previous.is-disabled.is-simple.is-centered {
+.pagination.is-simple.is-centered {
   justify-content: center;
 }
 
-.pagination-next.is-disabled.is-simple.is-centered.is-right, .pagination-previous.is-disabled.is-simple.is-centered.is-right {
+.pagination.is-simple.is-right {
   justify-content: flex-end;
 }
 
-.pagination-next.is-disabled.is-simple .is-current, .pagination-previous.is-disabled.is-simple .is-current {
+.pagination .is-current {
   pointer-events: none;
   cursor: not-allowed;
 }
