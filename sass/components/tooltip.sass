@@ -3,33 +3,33 @@ $tooltip-arrow-margin: 2px !default
 
 $tooltip-multiline-sizes: (small: 180px,medium: 240px,large: 300px) !default
 
-@mixin tooltip-arrow($direction, $color) 
+@mixin tooltip-arrow($direction, $color)
     @if ($direction == "is-top")
         border-top: $tooltip-arrow-size solid $color
         border-right: $tooltip-arrow-size solid transparent
         border-left: $tooltip-arrow-size solid transparent
         bottom: calc(100% + #{$tooltip-arrow-margin})
-    @else if ($direction == "is-bottom") 
+    @else if ($direction == "is-bottom")
         border-right: $tooltip-arrow-size solid transparent
         border-bottom: $tooltip-arrow-size solid $color
         border-left: $tooltip-arrow-size solid transparent
         top: calc(100% + #{$tooltip-arrow-margin})
-    @else if ($direction == "is-right") 
+    @else if ($direction == "is-right")
         border-top: $tooltip-arrow-size solid transparent
         border-right: $tooltip-arrow-size solid $color
         border-bottom: $tooltip-arrow-size solid transparent
         left: calc(100% + #{$tooltip-arrow-margin})
-    @else if ($direction == "is-left") 
+    @else if ($direction == "is-left")
         border-top: $tooltip-arrow-size solid transparent
         border-bottom: $tooltip-arrow-size solid transparent
         border-left: $tooltip-arrow-size solid $color
         right: calc(100% + #{$tooltip-arrow-margin})
-    
-@mixin tooltip($direction) 
-    &.#{$direction} 
+
+@mixin tooltip($direction)
+    &.#{$direction}
         &:before,
-        &:after 
-            @if ($direction == "is-top") 
+        &:after
+            @if ($direction == "is-top")
                 top: auto
                 right: auto
                 bottom: calc(100% + #{$tooltip-arrow-size} + #{$tooltip-arrow-margin})
@@ -53,20 +53,18 @@ $tooltip-multiline-sizes: (small: 180px,medium: 240px,large: 300px) !default
                 bottom: auto
                 left: auto
                 transform: translateY(-50%)
-            
-        
-        @each $name, $pair in $colors 
+
+        @each $name, $pair in $colors
             $color: nth($pair, 1)
-            &.is-#{$name}:before 
+            &.is-#{$name}:before
                 @include tooltip-arrow($direction, $color)
-            
-        
-        &.is-multiline 
-            @each $name, $size in $tooltip-multiline-sizes 
-                &.is-#{$name}:after 
+
+        &.is-multiline
+            @each $name, $size in $tooltip-multiline-sizes
+                &.is-#{$name}:after
                     width: $size
 // Base
-.v-tooltip 
+.v-tooltip
     @include tooltip("is-top")
     @include tooltip("is-right")
     @include tooltip("is-bottom")
@@ -74,17 +72,17 @@ $tooltip-multiline-sizes: (small: 180px,medium: 240px,large: 300px) !default
     position: relative
     display: inline-flex
     &:before,
-    &:after 
+    &:after
         position: absolute
         content: ""
         opacity: 0
         visibility: hidden
         pointer-events: none
-    
-    &:before 
+
+    &:before
         z-index: 39
-    
-    &:after 
+
+    &:after
         content: attr(data-label)
         width: auto
         padding: 0.35rem 0.75rem
@@ -94,49 +92,42 @@ $tooltip-multiline-sizes: (small: 180px,medium: 240px,large: 300px) !default
         box-shadow: 0px 1px 2px 1px rgba(0, 1, 0, 0.2)
         z-index: 38
         white-space: nowrap
-    
+
     &:not([data-label=""]):hover:before,
-    &:not([data-label=""]):hover:after 
+    &:not([data-label=""]):hover:after
         transition-delay: inherit
         opacity: 1
         visibility: visible
-    
+
     // Modifiers
-    @each $name, $pair in $colors 
+    @each $name, $pair in $colors
         $color: nth($pair, 1)
         $color-invert: nth($pair, 2)
-        &.is-#{$name}:after 
+        &.is-#{$name}:after
             background: $color
             color: $color-invert
-        
-    
-    &:not([data-label=""]).is-always 
+
+    &:not([data-label=""]).is-always
         &:before,
-        &:after 
+        &:after
             opacity: 1
             visibility: visible
-        
-    
-    &.is-multiline 
-        &:after 
+
+    &.is-multiline
+        &:after
             display: flex-block
             text-align: center
             white-space: normal
-        
-    
-    &.is-dashed 
+
+    &.is-dashed
         border-bottom: 1px dashed $grey-light
         cursor: default
-    
-    &.is-square 
-        &:after 
-            border-radius: 0
-        
-    
-    &.is-animated 
-        &:before,
-        &:after 
-            transition: opacity $speed $easing, visibility $speed $easing
-        
-    
 
+    &.is-square
+        &:after
+            border-radius: 0
+
+    &.is-animated
+        &:before,
+        &:after
+            transition: opacity $speed $easing, visibility $speed $easing
