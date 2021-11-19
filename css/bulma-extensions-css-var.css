@@ -114,6 +114,74 @@
   transform: translate3d(100%, 0, 0);
 }
 
+.fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+
+.fade-enter-active {
+  transition: opacity 300ms ease-in;
+}
+
+.fade-leave-active {
+  transition: opacity 150ms ease-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0.5;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0.5;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .switch {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -2330,5 +2398,45 @@ input[type="range"].slider.is-danger + output {
 .pagination .is-current {
   pointer-events: none;
   cursor: not-allowed;
+}
+
+.v-toast-container {
+  position: fixed;
+  display: flex;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 2em;
+  overflow: hidden;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.v-toast-container--top {
+  flex-direction: column;
+}
+
+.v-toast-container--bottom {
+  flex-direction: column-reverse;
+}
+
+@media screen and (max-width: 768px) {
+  .v-toast-container {
+    padding: 0;
+    position: fixed !important;
+  }
+}
+
+.v-toast--top, .v-toast--bottom {
+  align-self: center;
+}
+
+.v-toast--top-right, .v-toast--bottom-right {
+  align-self: flex-end;
+}
+
+.v-toast--top-left, .v-toast--bottom-left {
+  align-self: flex-start;
 }
 /*# sourceMappingURL=bulma-extensions-css-var.css.map */

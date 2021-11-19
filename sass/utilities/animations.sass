@@ -2,54 +2,91 @@ $dimensions: height max-height max-width min-height min-width width
 $transition-timing-function: ease-in
 $speed-slow: 0.5s
 
-@each $dimension in $dimensions 
-	.is-#{$dimension}-animated
-		transition: #{$dimension} $speed-slow $transition-timing-function 
-		overflow: hidden
-	
-.is-fade 
-	opacity: 1
-	animation-name: fadeInOpacity
-	animation-iteration-count: 1
-	animation-timing-function: $transition-timing-function 
-	animation-duration: 0.75s
+@each $dimension in $dimensions
+  .is-#{$dimension}-animated
+    transition: #{$dimension} $speed-slow $transition-timing-function
+    overflow: hidden
 
-@keyframes fadeInOpacity 
-	0% 
-		opacity: 0
-	100% 
-		opacity: 1
+.is-fade
+  opacity: 1
+  animation-name: fadeInOpacity
+  animation-iteration-count: 1
+  animation-timing-function: $transition-timing-function
+  animation-duration: 0.75s
 
-.slide-enter-active 
-  transition: max-height $speed-slow $transition-timing-function 
+@keyframes fadeInOpacity
+  0%
+    opacity: 0
+  100%
+    opacity: 1
+
+.slide-enter-active
+  transition: max-height $speed-slow $transition-timing-function
   max-height: 0
   overflow: hidden
 
-.slide-leave-active 
-  transition: max-height $speed-slow $transition-timing-function 
+.slide-leave-active
+  transition: max-height $speed-slow $transition-timing-function
   max-height: 1000px
   overflow: hidden
 
-.slide-enter-to, .slide-leave 
+.slide-enter-to, .slide-leave
   max-height: 1000px
 
-.slide-enter, .slide-leave-to 
+.slide-enter, .slide-leave-to
   max-height: 0
 
-
-.slide-right-enter-active 
+.slide-right-enter-active
   animation: slide-in-right 0.5s ease-out both
 
-@keyframes slide-in-right 
-  0% 
+@keyframes slide-in-right
+  0%
     transform: translateX(-1000px)
-  100% 
+  100%
     transform: translateX(0)
 
 .slide-left-enter-active,
-.slide-left-leave-active 
-    transition: transform 200ms $transition-timing-function 
+.slide-left-leave-active
+  transition: transform 200ms $transition-timing-function
 .slide-left-leave-to
-    transform: translate3d(-100%, 0, 0)
+  transform: translate3d(-100%, 0, 0)
 .slide-left-enter
-    transform: translate3d(100%, 0, 0)
+  transform: translate3d(100%, 0, 0)
+
+// Toast
+
+.fadeOut
+  -webkit-animation-name: fadeOut
+  animation-name: fadeOut
+
+.fadeInDown
+  -webkit-animation-name: fadeInDown
+  animation-name: fadeInDown
+
+.fadeInUp
+  -webkit-animation-name: fadeInUp
+  animation-name: fadeInUp
+
+.fade-enter-active
+  transition: opacity 300ms ease-in
+
+.fade-leave-active
+  transition: opacity 150ms ease-out
+
+.fade-enter,
+.fade-leave-to
+  opacity: 0
+
+@keyframes fadeOut
+  from
+    opacity: 1
+  to
+    opacity: 0
+
+@keyframes fadeInUp
+  from
+    opacity: 0.5
+    transform: translate3d(0, 100%, 0)
+  to
+    opacity: 1
+    transform: none
