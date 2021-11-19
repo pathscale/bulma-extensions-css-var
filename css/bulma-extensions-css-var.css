@@ -2413,6 +2413,14 @@ input[type="range"].slider.is-danger + output {
   pointer-events: none;
 }
 
+.v-toast-container .notification {
+  -webkit-animation-duration: 150ms;
+          animation-duration: 150ms;
+  pointer-events: auto;
+  cursor: pointer;
+  word-break: break-word;
+}
+
 .v-toast-container--top {
   flex-direction: column;
 }
