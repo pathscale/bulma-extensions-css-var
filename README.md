@@ -8,4 +8,6 @@ Add the new component file to sass/components and import it from \_all.sass
 
 ## Release
 
-Run npm run build and npm publish
+```bash
+npm run build and npm publish
+```
