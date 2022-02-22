@@ -22,3 +22,46 @@
   display: flex
   justify-content: flex-end
   align-items: center
+
+@media screen and (max-width: 768px)
+  .v-table .table-wrapper.has-mobile-cards
+    & .table
+      background-color: transparent
+
+    & thead tr th
+      display: none
+
+    & tr
+      box-shadow: 0 2px 3px rgba(10, 10, 10, 0.1), 0 0 0 1px rgba(10, 10, 10, 0.1)
+      max-width: 100%
+      position: relative
+
+      &:not(.expansion)
+        display: block
+
+      & td:last-child
+        border-bottom: 0
+
+      &:not(:last-child)
+        margin-bottom: 1rem
+
+      &:not([class*='is-'])
+        background: white
+
+      &:not([class*='is-']):hover
+        background-color: white
+
+     
+
+      &:not(.expansion):not(.is-empty):not(.table-footer) td
+        display: flex
+        width: auto
+        justify-content: space-between
+        text-align: right
+        border-bottom: 1px solid whitesmoke
+
+      &:not(.expansion):not(.is-empty):not(.table-footer) td:before
+        content: attr(data-label)
+        font-weight: 600
+        padding-right: 0.5em
+        text-align: left
