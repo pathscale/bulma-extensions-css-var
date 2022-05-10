@@ -1,0 +1,1273 @@
+.step
+  &:not(:last-child)
+    margin-bottom: 1.5rem
+
+  .step-segment
+    position: relative
+
+    &:not(:last-child):after
+      content: " "
+      display: block
+      position: absolute
+
+  &.is-vertical
+    .step-segment
+      display: block
+
+      &:not(:last-child)
+        min-height: 4em
+
+    &.is-short
+      .step-segment
+        flex-grow: 0
+
+      &.is-centered
+        justify-content: center
+
+      &.is-bottom
+        justify-content: flex-end
+
+    &:not(.is-short)
+      height: 100%
+      display: flex
+      flex-direction: column
+
+      .step-segment:not(:last-child)
+        flex-grow: 1
+
+  &.is-horizontal
+    display: flex
+
+    .step-segment:not(:last-child)
+      flex-basis: 1rem
+      flex-grow: 1
+      flex-shrink: 1
+
+    &.is-narrow
+      .step-segment
+        flex-grow: 0
+
+        &:not(:last-child)
+          min-width: 10em
+
+      &.is-centered
+        justify-content: center
+
+      &.is-right
+        justify-content: flex-end
+
+    &.has-content-centered
+      text-align: center
+
+    &.is-balanced .step-segment:last-child, &.has-content-centered .step-segment:last-child
+      flex-basis: 1rem
+      flex-grow: 1
+      flex-shrink: 1
+
+    &.is-narrow.has-content-centered .step-segment:last-child
+      flex-grow: 0
+      min-width: 10em
+
+    .step-content.is-divider-content
+      text-align: center
+
+  .step-marker
+    align-items: center
+    display: flex
+    border-radius: 50%
+    font-weight: 700
+    justify-content: center
+    position: relative
+    z-index: 5
+    height: 2rem
+    width: 2rem
+    overflow: hidden
+
+  font-size: 1rem
+
+  &.is-vertical
+    display: flex
+    flex-direction: column
+
+    .step-segment:not(:last-child):after
+      bottom: -0.24rem
+      left: calc(1rem - (0.2em))
+      top: 1.76rem
+      width: 0.4em
+
+    .step-content
+      margin-left: calc(1rem + .5em)
+      margin-top: -2rem
+      padding-left: 1em
+      padding-bottom: 1em
+
+      &.is-divider-content
+        margin-top: 0
+        padding-bottom: 0
+
+    &.has-content-centered .step-content
+      padding-top: calc(1rem - .5em)
+
+    &:not(.is-thin)
+      &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+        top: 2.3rem
+        bottom: 0.3rem
+
+  &.is-horizontal
+    .step-segment:not(:last-child):after
+      height: 0.4em
+      left: 1.76rem
+      right: -0.24rem
+      top: calc(1rem - (0.2em))
+
+    &.has-content-above .step-segment:not(:last-child)::after
+      bottom: calc(1rem - (0.2em))
+      top: auto
+
+    .extra-data
+      left: calc(50% + 1.3rem)
+      right: calc(-50% + 1.3rem)
+      bottom: 100%
+      position: absolute
+
+      &.has-overflow-right
+        overflow: visible
+        right: auto
+        white-space: nowrap
+        min-width: calc(100% - 1rem - (0.2em))
+
+      &.has-overflow-left, &.has-overflow-centered
+        overflow: visible
+        left: auto
+        white-space: nowrap
+        min-width: calc(100% - 1rem - (0.2em))
+
+    &.has-content-above .extra-data
+      top: 100%
+      bottom: auto
+
+    .step-content
+      margin-left: 1rem
+
+      &:not(:last-child)
+        margin-right: -1rem
+
+      &.is-divider-content
+        margin-right: -1rem
+        padding-left: 2em
+        padding-right: 2em
+
+    &.has-content-centered
+      .step-segment:not(:last-child):after
+        left: 50%
+        right: -50%
+
+      .step-marker
+        position: absolute
+        left: calc(50% - 1rem)
+
+      .step-content
+        margin-top: 2rem
+        margin-left: .5em
+        margin-right: .5em
+        padding-top: .2em
+
+    &.has-content-above.has-content-centered .step-content
+      margin-bottom: 2rem
+      padding-bottom: .2em
+
+    &:not(.is-thin)
+      &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+        left: 2.3rem
+        right: 0.3rem
+
+      &.has-content-centered
+        &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+          left: calc(50% + 1.3rem)
+          right: calc(-50% + 1.3rem)
+
+  &.is-small
+    font-size: 0.75rem
+
+    .step-marker
+      height: 1.5rem
+      width: 1.5rem
+      overflow: hidden
+
+    &.is-vertical
+      display: flex
+      flex-direction: column
+
+      .step-segment:not(:last-child):after
+        bottom: -0.24rem
+        left: calc(0.75rem - (0.2em))
+        top: 1.26rem
+        width: 0.4em
+
+      .step-content
+        margin-left: calc(0.75rem + .5em)
+        margin-top: -1.5rem
+        padding-left: 1em
+        padding-bottom: 1em
+
+        &.is-divider-content
+          margin-top: 0
+          padding-bottom: 0
+
+      &.has-content-centered .step-content
+        padding-top: calc(0.75rem - .5em)
+
+      &:not(.is-thin)
+        &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+          top: 1.8rem
+          bottom: 0.3rem
+
+    &.is-horizontal
+      .step-segment:not(:last-child):after
+        height: 0.4em
+        left: 1.26rem
+        right: -0.24rem
+        top: calc(0.75rem - (0.2em))
+
+      &.has-content-above .step-segment:not(:last-child)::after
+        bottom: calc(0.75rem - (0.2em))
+        top: auto
+
+      .extra-data
+        left: calc(50% + 1.05rem)
+        right: calc(-50% + 1.05rem)
+        bottom: 100%
+        position: absolute
+
+        &.has-overflow-right
+          overflow: visible
+          right: auto
+          white-space: nowrap
+          min-width: calc(100% - 0.75rem - (0.2em))
+
+        &.has-overflow-left, &.has-overflow-centered
+          overflow: visible
+          left: auto
+          white-space: nowrap
+          min-width: calc(100% - 0.75rem - (0.2em))
+
+      &.has-content-above .extra-data
+        top: 100%
+        bottom: auto
+
+      .step-content
+        margin-left: 0.75rem
+
+        &:not(:last-child)
+          margin-right: -0.75rem
+
+        &.is-divider-content
+          margin-right: -0.75rem
+          padding-left: 2em
+          padding-right: 2em
+
+      &.has-content-centered
+        .step-segment:not(:last-child):after
+          left: 50%
+          right: -50%
+
+        .step-marker
+          position: absolute
+          left: calc(50% - 0.75rem)
+
+        .step-content
+          margin-top: 1.5rem
+          margin-left: .5em
+          margin-right: .5em
+          padding-top: .2em
+
+      &.has-content-above.has-content-centered .step-content
+        margin-bottom: 1.5rem
+        padding-bottom: .2em
+
+      &:not(.is-thin)
+        &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+          left: 1.8rem
+          right: 0.3rem
+
+        &.has-content-centered
+          &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+            left: calc(50% + 1.05rem)
+            right: calc(-50% + 1.05rem)
+
+  &.is-medium
+    font-size: 1.25rem
+
+    .step-marker
+      height: 2.5rem
+      width: 2.5rem
+      overflow: hidden
+
+    &.is-vertical
+      display: flex
+      flex-direction: column
+
+      .step-segment:not(:last-child):after
+        bottom: -0.24rem
+        left: calc(1.25rem - (0.2em))
+        top: 2.26rem
+        width: 0.4em
+
+      .step-content
+        margin-left: calc(1.25rem + .5em)
+        margin-top: -2.5rem
+        padding-left: 1em
+        padding-bottom: 1em
+
+        &.is-divider-content
+          margin-top: 0
+          padding-bottom: 0
+
+      &.has-content-centered .step-content
+        padding-top: calc(1.25rem - .5em)
+
+      &:not(.is-thin)
+        &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+          top: 2.8rem
+          bottom: 0.3rem
+
+    &.is-horizontal
+      .step-segment:not(:last-child):after
+        height: 0.4em
+        left: 2.26rem
+        right: -0.24rem
+        top: calc(1.25rem - (0.2em))
+
+      &.has-content-above .step-segment:not(:last-child)::after
+        bottom: calc(1.25rem - (0.2em))
+        top: auto
+
+      .extra-data
+        left: calc(50% + 1.55rem)
+        right: calc(-50% + 1.55rem)
+        bottom: 100%
+        position: absolute
+
+        &.has-overflow-right
+          overflow: visible
+          right: auto
+          white-space: nowrap
+          min-width: calc(100% - 1.25rem - (0.2em))
+
+        &.has-overflow-left, &.has-overflow-centered
+          overflow: visible
+          left: auto
+          white-space: nowrap
+          min-width: calc(100% - 1.25rem - (0.2em))
+
+      &.has-content-above .extra-data
+        top: 100%
+        bottom: auto
+
+      .step-content
+        margin-left: 1.25rem
+
+        &:not(:last-child)
+          margin-right: -1.25rem
+
+        &.is-divider-content
+          margin-right: -1.25rem
+          padding-left: 2em
+          padding-right: 2em
+
+      &.has-content-centered
+        .step-segment:not(:last-child):after
+          left: 50%
+          right: -50%
+
+        .step-marker
+          position: absolute
+          left: calc(50% - 1.25rem)
+
+        .step-content
+          margin-top: 2.5rem
+          margin-left: .5em
+          margin-right: .5em
+          padding-top: .2em
+
+      &.has-content-above.has-content-centered .step-content
+        margin-bottom: 2.5rem
+        padding-bottom: .2em
+
+      &:not(.is-thin)
+        &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+          left: 2.8rem
+          right: 0.3rem
+
+        &.has-content-centered
+          &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+            left: calc(50% + 1.55rem)
+            right: calc(-50% + 1.55rem)
+
+  &.is-large
+    font-size: 1.5rem
+
+    .step-marker
+      height: 3rem
+      width: 3rem
+      overflow: hidden
+
+    &.is-vertical
+      display: flex
+      flex-direction: column
+
+      .step-segment:not(:last-child):after
+        bottom: -0.24rem
+        left: calc(1.5rem - (0.2em))
+        top: 2.76rem
+        width: 0.4em
+
+      .step-content
+        margin-left: calc(1.5rem + .5em)
+        margin-top: -3rem
+        padding-left: 1em
+        padding-bottom: 1em
+
+        &.is-divider-content
+          margin-top: 0
+          padding-bottom: 0
+
+      &.has-content-centered .step-content
+        padding-top: calc(1.5rem - .5em)
+
+      &:not(.is-thin)
+        &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+          top: 3.3rem
+          bottom: 0.3rem
+
+    &.is-horizontal
+      .step-segment:not(:last-child):after
+        height: 0.4em
+        left: 2.76rem
+        right: -0.24rem
+        top: calc(1.5rem - (0.2em))
+
+      &.has-content-above .step-segment:not(:last-child)::after
+        bottom: calc(1.5rem - (0.2em))
+        top: auto
+
+      .extra-data
+        left: calc(50% + 1.8rem)
+        right: calc(-50% + 1.8rem)
+        bottom: 100%
+        position: absolute
+
+        &.has-overflow-right
+          overflow: visible
+          right: auto
+          white-space: nowrap
+          min-width: calc(100% - 1.5rem - (0.2em))
+
+        &.has-overflow-left, &.has-overflow-centered
+          overflow: visible
+          left: auto
+          white-space: nowrap
+          min-width: calc(100% - 1.5rem - (0.2em))
+
+      &.has-content-above .extra-data
+        top: 100%
+        bottom: auto
+
+      .step-content
+        margin-left: 1.5rem
+
+        &:not(:last-child)
+          margin-right: -1.5rem
+
+        &.is-divider-content
+          margin-right: -1.5rem
+          padding-left: 2em
+          padding-right: 2em
+
+      &.has-content-centered
+        .step-segment:not(:last-child):after
+          left: 50%
+          right: -50%
+
+        .step-marker
+          position: absolute
+          left: calc(50% - 1.5rem)
+
+        .step-content
+          margin-top: 3rem
+          margin-left: .5em
+          margin-right: .5em
+          padding-top: .2em
+
+      &.has-content-above.has-content-centered .step-content
+        margin-bottom: 3rem
+        padding-bottom: .2em
+
+      &:not(.is-thin)
+        &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+          left: 3.3rem
+          right: 0.3rem
+
+        &.has-content-centered
+          &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+            left: calc(50% + 1.8rem)
+            right: calc(-50% + 1.8rem)
+
+@media screen and (max-width: 768px)
+  .step:not(.is-horizontal)
+    .step-segment
+      display: block
+
+      &:not(:last-child)
+        min-height: 4em
+
+    &.is-short
+      .step-segment
+        flex-grow: 0
+
+      &.is-centered
+        justify-content: center
+
+      &.is-bottom
+        justify-content: flex-end
+
+    &:not(.is-short)
+      height: 100%
+      display: flex
+      flex-direction: column
+
+      .step-segment:not(:last-child)
+        flex-grow: 1
+
+@media screen and (min-width: 769px), print
+  .step:not(.is-vertical)
+    display: flex
+
+    .step-segment:not(:last-child)
+      flex-basis: 1rem
+      flex-grow: 1
+      flex-shrink: 1
+
+    &.is-narrow
+      .step-segment
+        flex-grow: 0
+
+        &:not(:last-child)
+          min-width: 10em
+
+      &.is-centered
+        justify-content: center
+
+      &.is-right
+        justify-content: flex-end
+
+    &.has-content-centered
+      text-align: center
+
+    &.is-balanced .step-segment:last-child, &.has-content-centered .step-segment:last-child
+      flex-basis: 1rem
+      flex-grow: 1
+      flex-shrink: 1
+
+    &.is-narrow.has-content-centered .step-segment:last-child
+      flex-grow: 0
+      min-width: 10em
+
+    .step-content.is-divider-content
+      text-align: center
+
+@media screen and (max-width: 768px)
+  .step:not(.is-horizontal)
+    display: flex
+    flex-direction: column
+
+    .step-segment:not(:last-child):after
+      bottom: -0.24rem
+      left: calc(1rem - (0.2em))
+      top: 1.76rem
+      width: 0.4em
+
+    .step-content
+      margin-left: calc(1rem + .5em)
+      margin-top: -2rem
+      padding-left: 1em
+      padding-bottom: 1em
+
+      &.is-divider-content
+        margin-top: 0
+        padding-bottom: 0
+
+    &.has-content-centered .step-content
+      padding-top: calc(1rem - .5em)
+
+    &:not(.is-thin)
+      &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+        top: 2.3rem
+        bottom: 0.3rem
+
+@media screen and (min-width: 769px), print
+  .step:not(.is-vertical)
+    .step-segment:not(:last-child):after
+      height: 0.4em
+      left: 1.76rem
+      right: -0.24rem
+      top: calc(1rem - (0.2em))
+
+    &.has-content-above .step-segment:not(:last-child)::after
+      bottom: calc(1rem - (0.2em))
+      top: auto
+
+    .extra-data
+      left: calc(50% + 1.3rem)
+      right: calc(-50% + 1.3rem)
+      bottom: 100%
+      position: absolute
+
+      &.has-overflow-right
+        overflow: visible
+        right: auto
+        white-space: nowrap
+        min-width: calc(100% - 1rem - (0.2em))
+
+      &.has-overflow-left, &.has-overflow-centered
+        overflow: visible
+        left: auto
+        white-space: nowrap
+        min-width: calc(100% - 1rem - (0.2em))
+
+    &.has-content-above .extra-data
+      top: 100%
+      bottom: auto
+
+    .step-content
+      margin-left: 1rem
+
+      &:not(:last-child)
+        margin-right: -1rem
+
+      &.is-divider-content
+        margin-right: -1rem
+        padding-left: 2em
+        padding-right: 2em
+
+    &.has-content-centered
+      .step-segment:not(:last-child):after
+        left: 50%
+        right: -50%
+        margin-left: 1rem
+        margin-right: 1rem
+
+      .step-marker
+        position: absolute
+        left: calc(50% - 1rem)
+
+      .step-content
+        margin-top: 2rem
+        margin-left: .5em
+        margin-right: .5em
+        padding-top: .2em
+
+    &.has-content-above.has-content-centered .step-content
+      margin-bottom: 2rem
+      padding-bottom: .2em
+
+    &:not(.is-thin)
+      &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+        left: 2.3rem
+        right: 0.3rem
+
+      &.has-content-centered
+        &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+          left: calc(50% + 1.3rem)
+          right: calc(-50% + 1.3rem)
+
+@media screen and (max-width: 768px)
+  .step.is-small:not(.is-horizontal)
+    display: flex
+    flex-direction: column
+
+    .step-segment:not(:last-child):after
+      bottom: -0.24rem
+      left: calc(0.75rem - (0.2em))
+      top: 1.26rem
+      width: 0.4em
+
+    .step-content
+      margin-left: calc(0.75rem + .5em)
+      margin-top: -1.5rem
+      padding-left: 1em
+      padding-bottom: 1em
+
+      &.is-divider-content
+        margin-top: 0
+        padding-bottom: 0
+
+    &.has-content-centered .step-content
+      padding-top: calc(0.75rem - .5em)
+
+    &:not(.is-thin)
+      &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+        top: 1.8rem
+        bottom: 0.3rem
+
+@media screen and (min-width: 769px), print
+  .step.is-small:not(.is-vertical)
+    .step-segment:not(:last-child):after
+      height: 0.4em
+      left: 1.26rem
+      right: -0.24rem
+      top: calc(0.75rem - (0.2em))
+
+    &.has-content-above .step-segment:not(:last-child)::after
+      bottom: calc(0.75rem - (0.2em))
+      top: auto
+
+    .extra-data
+      left: calc(50% + 1.05rem)
+      right: calc(-50% + 1.05rem)
+      bottom: 100%
+      position: absolute
+
+      &.has-overflow-right
+        overflow: visible
+        right: auto
+        white-space: nowrap
+        min-width: calc(100% - 0.75rem - (0.2em))
+
+      &.has-overflow-left, &.has-overflow-centered
+        overflow: visible
+        left: auto
+        white-space: nowrap
+        min-width: calc(100% - 0.75rem - (0.2em))
+
+    &.has-content-above .extra-data
+      top: 100%
+      bottom: auto
+
+    .step-content
+      margin-left: 0.75rem
+
+      &:not(:last-child)
+        margin-right: -0.75rem
+
+      &.is-divider-content
+        margin-right: -0.75rem
+        padding-left: 2em
+        padding-right: 2em
+
+    &.has-content-centered
+      .step-segment:not(:last-child):after
+        left: 50%
+        right: -50%
+
+      .step-marker
+        position: absolute
+        left: calc(50% - 0.75rem)
+
+      .step-content
+        margin-top: 1.5rem
+        margin-left: .5em
+        margin-right: .5em
+        padding-top: .2em
+
+    &.has-content-above.has-content-centered .step-content
+      margin-bottom: 1.5rem
+      padding-bottom: .2em
+
+    &:not(.is-thin)
+      &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+        left: 1.8rem
+        right: 0.3rem
+
+      &.has-content-centered
+        &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+          left: calc(50% + 1.05rem)
+          right: calc(-50% + 1.05rem)
+
+@media screen and (max-width: 768px)
+  .step.is-medium:not(.is-horizontal)
+    display: flex
+    flex-direction: column
+
+    .step-segment:not(:last-child):after
+      bottom: -0.24rem
+      left: calc(1.25rem - (0.2em))
+      top: 2.26rem
+      width: 0.4em
+
+    .step-content
+      margin-left: calc(1.25rem + .5em)
+      margin-top: -2.5rem
+      padding-left: 1em
+      padding-bottom: 1em
+
+      &.is-divider-content
+        margin-top: 0
+        padding-bottom: 0
+
+    &.has-content-centered .step-content
+      padding-top: calc(1.25rem - .5em)
+
+    &:not(.is-thin)
+      &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+        top: 2.8rem
+        bottom: 0.3rem
+
+@media screen and (min-width: 769px), print
+  .step.is-medium:not(.is-vertical)
+    .step-segment:not(:last-child):after
+      height: 0.4em
+      left: 2.26rem
+      right: -0.24rem
+      top: calc(1.25rem - (0.2em))
+
+    &.has-content-above .step-segment:not(:last-child)::after
+      bottom: calc(1.25rem - (0.2em))
+      top: auto
+
+    .extra-data
+      left: calc(50% + 1.55rem)
+      right: calc(-50% + 1.55rem)
+      bottom: 100%
+      position: absolute
+
+      &.has-overflow-right
+        overflow: visible
+        right: auto
+        white-space: nowrap
+        min-width: calc(100% - 1.25rem - (0.2em))
+
+      &.has-overflow-left, &.has-overflow-centered
+        overflow: visible
+        left: auto
+        white-space: nowrap
+        min-width: calc(100% - 1.25rem - (0.2em))
+
+    &.has-content-above .extra-data
+      top: 100%
+      bottom: auto
+
+    .step-content
+      margin-left: 1.25rem
+
+      &:not(:last-child)
+        margin-right: -1.25rem
+
+      &.is-divider-content
+        margin-right: -1.25rem
+        padding-left: 2em
+        padding-right: 2em
+
+    &.has-content-centered
+      .step-segment:not(:last-child):after
+        left: 50%
+        right: -50%
+
+      .step-marker
+        position: absolute
+        left: calc(50% - 1.25rem)
+
+      .step-content
+        margin-top: 2.5rem
+        margin-left: .5em
+        margin-right: .5em
+        padding-top: .2em
+
+    &.has-content-above.has-content-centered .step-content
+      margin-bottom: 2.5rem
+      padding-bottom: .2em
+
+    &:not(.is-thin)
+      &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+        left: 2.8rem
+        right: 0.3rem
+
+      &.has-content-centered
+        &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+          left: calc(50% + 1.55rem)
+          right: calc(-50% + 1.55rem)
+
+@media screen and (max-width: 768px)
+  .step.is-large:not(.is-horizontal)
+    display: flex
+    flex-direction: column
+
+    .step-segment:not(:last-child):after
+      bottom: -0.24rem
+      left: calc(1.5rem - (0.2em))
+      top: 2.76rem
+      width: 0.4em
+
+    .step-content
+      margin-left: calc(1.5rem + .5em)
+      margin-top: -3rem
+      padding-left: 1em
+      padding-bottom: 1em
+
+      &.is-divider-content
+        margin-top: 0
+        padding-bottom: 0
+
+    &.has-content-centered .step-content
+      padding-top: calc(1.5rem - .5em)
+
+    &:not(.is-thin)
+      &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+        top: 3.3rem
+        bottom: 0.3rem
+
+@media screen and (min-width: 769px), print
+  .step.is-large:not(.is-vertical)
+    .step-segment:not(:last-child):after
+      height: 0.4em
+      left: 2.76rem
+      right: -0.24rem
+      top: calc(1.5rem - (0.2em))
+
+    &.has-content-above .step-segment:not(:last-child)::after
+      bottom: calc(1.5rem - (0.2em))
+      top: auto
+
+    .extra-data
+      left: calc(50% + 1.8rem)
+      right: calc(-50% + 1.8rem)
+      bottom: 100%
+      position: absolute
+
+      &.has-overflow-right
+        overflow: visible
+        right: auto
+        white-space: nowrap
+        min-width: calc(100% - 1.5rem - (0.2em))
+
+      &.has-overflow-left, &.has-overflow-centered
+        overflow: visible
+        left: auto
+        white-space: nowrap
+        min-width: calc(100% - 1.5rem - (0.2em))
+
+    &.has-content-above .extra-data
+      top: 100%
+      bottom: auto
+
+    .step-content
+      margin-left: 1.5rem
+
+      &:not(:last-child)
+        margin-right: -1.5rem
+
+      &.is-divider-content
+        margin-right: -1.5rem
+        padding-left: 2em
+        padding-right: 2em
+
+    &.has-content-centered
+      .step-segment:not(:last-child):after
+        left: 50%
+        right: -50%
+
+      .step-marker
+        position: absolute
+        left: calc(50% - 1.5rem)
+
+      .step-content
+        margin-top: 3rem
+        margin-left: .5em
+        margin-right: .5em
+        padding-top: .2em
+
+    &.has-content-above.has-content-centered .step-content
+      margin-bottom: 3rem
+      padding-bottom: .2em
+
+    &:not(.is-thin)
+      &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+        left: 3.3rem
+        right: 0.3rem
+
+      &.has-content-centered
+        &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+          left: calc(50% + 1.8rem)
+          right: calc(-50% + 1.8rem)
+
+.step-segment
+  &:after
+    background-color: #23d160
+
+  &.is-active
+    &:after, ~ .step-segment:after
+      background-color: #dbdbdb
+
+.step
+  &:not(.is-hollow)
+    .step-marker:not(.is-hollow)
+      background-color: #23d160
+      color: #fff
+
+    .step-segment.is-active
+      .step-marker:not(.is-hollow)
+        background-color: #23d160
+        color: #fff
+
+      ~ .step-segment .step-marker:not(.is-hollow)
+        background-color: #dbdbdb
+        color: rgba(0, 0, 0, 0.7)
+
+  &.is-hollow .step-marker
+    border: 0.3em solid #23d160
+
+.step-marker.is-hollow
+  border: 0.3em solid #23d160
+
+.step
+  &.is-hollow .is-active .step-marker, .is-active .step-marker.is-hollow
+    border-color: #23d160
+
+  &.is-hollow .step-segment.is-active ~ .step-segment .step-marker
+    border-color: #dbdbdb
+
+.step-segment.is-active ~ .step-segment .step-marker.is-hollow
+  border-color: #dbdbdb
+
+.step
+  &:not(.is-hollow) .step-marker:not(.is-hollow).is-white
+    background-color: white !important
+    color: #0a0a0a !important
+
+  &.is-hollow .step-marker.is-white, .step-marker.is-hollow.is-white
+    border-color: white !important
+
+  &:not(.is-hollow) .step-marker:not(.is-hollow).is-black
+    background-color: #0a0a0a !important
+    color: white !important
+
+  &.is-hollow .step-marker.is-black, .step-marker.is-hollow.is-black
+    border-color: #0a0a0a !important
+
+  &:not(.is-hollow) .step-marker:not(.is-hollow).is-light
+    background-color: whitesmoke !important
+    color: #363636 !important
+
+  &.is-hollow .step-marker.is-light, .step-marker.is-hollow.is-light
+    border-color: whitesmoke !important
+
+  &:not(.is-hollow) .step-marker:not(.is-hollow).is-dark
+    background-color: #363636 !important
+    color: whitesmoke !important
+
+  &.is-hollow .step-marker.is-dark, .step-marker.is-hollow.is-dark
+    border-color: #363636 !important
+
+  &:not(.is-hollow) .step-marker:not(.is-hollow).is-primary
+    background-color: #00d1b2 !important
+    color: #fff !important
+
+  &.is-hollow .step-marker.is-primary, .step-marker.is-hollow.is-primary
+    border-color: #00d1b2 !important
+
+  &:not(.is-hollow) .step-marker:not(.is-hollow).is-link
+    background-color: #3273dc !important
+    color: #fff !important
+
+  &.is-hollow .step-marker.is-link, .step-marker.is-hollow.is-link
+    border-color: #3273dc !important
+
+  &:not(.is-hollow) .step-marker:not(.is-hollow).is-info
+    background-color: #209cee !important
+    color: #fff !important
+
+  &.is-hollow .step-marker.is-info, .step-marker.is-hollow.is-info
+    border-color: #209cee !important
+
+  &:not(.is-hollow) .step-marker:not(.is-hollow).is-success
+    background-color: #23d160 !important
+    color: #fff !important
+
+  &.is-hollow .step-marker.is-success, .step-marker.is-hollow.is-success
+    border-color: #23d160 !important
+
+  &:not(.is-hollow) .step-marker:not(.is-hollow).is-warning
+    background-color: #ffdd57 !important
+    color: rgba(0, 0, 0, 0.7) !important
+
+  &.is-hollow .step-marker.is-warning, .step-marker.is-hollow.is-warning
+    border-color: #ffdd57 !important
+
+  &:not(.is-hollow) .step-marker:not(.is-hollow).is-danger
+    background-color: #ff3860 !important
+    color: #fff !important
+
+  &.is-hollow .step-marker.is-danger, .step-marker.is-hollow.is-danger
+    border-color: #ff3860 !important
+
+  &.is-vertical
+    &.is-dashed .step-segment:after, .step-segment.is-dashed:after
+      background: repeating-linear-gradient(0deg, #23d160, #23d160 5px, transparent 5px, transparent 10px)
+
+    &.is-dashed .step-segment.is-active
+      &:after, ~ .step-segment:after
+        background: repeating-linear-gradient(0deg, #dbdbdb, #dbdbdb 5px, transparent 5px, transparent 10px)
+
+    .step-segment.is-active
+      &.is-dashed:after, ~ .step-segment.is-dashed:after
+        background: repeating-linear-gradient(0deg, #dbdbdb, #dbdbdb 5px, transparent 5px, transparent 10px)
+
+  &.is-horizontal
+    &.is-dashed .step-segment:after, .step-segment.is-dashed:after
+      background: repeating-linear-gradient(90deg, #23d160, #23d160 10px, transparent 10px, transparent 20px)
+
+    &.is-dashed .step-segment.is-active
+      &:after, ~ .step-segment:after
+        background: repeating-linear-gradient(90deg, #dbdbdb, #dbdbdb 10px, transparent 10px, transparent 20px)
+
+    .step-segment.is-active
+      &.is-dashed:after, ~ .step-segment.is-dashed:after
+        background: repeating-linear-gradient(90deg, #dbdbdb, #dbdbdb 10px, transparent 10px, transparent 20px)
+
+  &.is-thin
+    .step-marker
+      width: 0.8em
+      height: 0.8em
+
+    &.is-hollow .step-marker, .step-marker.is-hollow
+      border-width: 1px
+      height: calc(0.8em + 1px)
+      width: calc(0.8em + 1px)
+
+    &.is-vertical
+      .step-segment:not(:last-child):after
+        bottom: 0
+        left: calc(0.4em - 0.5px)
+        top: 0.8em
+        width: 1px
+
+      .step-content
+        margin-top: -1.2em
+        margin-left: 0.8em
+
+      &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+        bottom: 0.4em
+        top: 1.2em
+
+      &.has-content-centered .step-content
+        padding-top: 1.6em
+
+    &.is-horizontal
+      .step-segment:not(:last-child):after
+        left: 0.8em
+        right: 0
+        top: calc(0.4em - 0.5px)
+        height: 1px
+
+      &.has-content-above .step-segment:not(:last-child)::after
+        bottom: calc(0.4em - 0.5px)
+        top: auto
+
+      .step-content
+        margin-top: 0.8em
+
+      &.has-content-centered
+        .step-segment:not(:last-child):after
+          left: calc(50% + 0.4em)
+          right: calc(-50% + 0.4em)
+
+        .step-marker
+          position: absolute
+          left: calc(50% - 0.4em)
+
+      &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+        left: 1.2em
+        right: 0.4em
+
+      &.has-content-centered
+        &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+          left: calc(50% + 0.8em)
+          right: calc(-50% + 0.8em)
+
+  &:not(.is-vertical).has-content-above .step-segment
+    display: flex
+    flex-direction: column-reverse
+
+    .step-content
+      margin-top: 0
+      padding-top: 0
+      display: flex
+      flex-direction: column-reverse
+
+@media screen and (max-width: 768px)
+  .step:not(.is-horizontal)
+    &.is-dashed .step-segment:after, .step-segment.is-dashed:after
+      background: repeating-linear-gradient(0deg, #23d160, #23d160 5px, transparent 5px, transparent 10px)
+
+    &.is-dashed .step-segment.is-active
+      &:after, ~ .step-segment:after
+        background: repeating-linear-gradient(0deg, #dbdbdb, #dbdbdb 5px, transparent 5px, transparent 10px)
+
+    .step-segment.is-active
+      &.is-dashed:after, ~ .step-segment.is-dashed:after
+        background: repeating-linear-gradient(0deg, #dbdbdb, #dbdbdb 5px, transparent 5px, transparent 10px)
+
+@media screen and (min-width: 769px), print
+  .step:not(.is-vertical)
+    &.is-dashed .step-segment:after, .step-segment.is-dashed:after
+      background: repeating-linear-gradient(90deg, #23d160, #23d160 10px, transparent 10px, transparent 20px)
+
+    &.is-dashed .step-segment.is-active
+      &:after, ~ .step-segment:after
+        background: repeating-linear-gradient(90deg, #dbdbdb, #dbdbdb 10px, transparent 10px, transparent 20px)
+
+    .step-segment.is-active
+      &.is-dashed:after, ~ .step-segment.is-dashed:after
+        background: repeating-linear-gradient(90deg, #dbdbdb, #dbdbdb 10px, transparent 10px, transparent 20px)
+
+@media screen and (max-width: 768px)
+  .step.is-thin:not(.is-horizontal)
+    .step-segment:not(:last-child):after
+      bottom: 0
+      left: calc(0.4em - 0.5px)
+      top: 0.8em
+      width: 1px
+
+    .step-content
+      margin-top: -1.2em
+      margin-left: 0.8em
+
+    &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+      bottom: 0.4em
+      top: 1.2em
+
+    &.has-content-centered .step-content
+      padding-top: 1.6em
+
+@media screen and (min-width: 769px), print
+  .step.is-thin:not(.is-vertical)
+    .step-segment:not(:last-child):after
+      left: 0.8em
+      right: 0
+      top: calc(0.4em - 0.5px)
+      height: 1px
+
+    &.has-content-above .step-segment:not(:last-child)::after
+      bottom: calc(0.4em - 0.5px)
+      top: auto
+
+    .step-content
+      margin-top: 0.8em
+
+    &.has-content-centered
+      .step-segment:not(:last-child):after
+        left: calc(50% + 0.4em)
+        right: calc(-50% + 0.4em)
+
+      .step-marker
+        position: absolute
+        left: calc(50% - 0.4em)
+
+    &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+      left: 1.2em
+      right: 0.4em
+
+    &.has-content-centered
+      &.has-gaps .step-segment:not(:last-child):after, .step-segment.has-gaps:not(:last-child):after
+        left: calc(50% + 0.8em)
+        right: calc(-50% + 0.8em)
