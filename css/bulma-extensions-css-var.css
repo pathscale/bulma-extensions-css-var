@@ -196,7 +196,7 @@
 }
 
 .v-sidebar .sidebar-content {
-  background-color: var(--blm-white-ter);
+  background-color: var(--white-ter);
   box-shadow: 5px 0px 13px 3px rgba(10, 10, 10, 0.1);
   width: 260px;
   z-index: 41;
@@ -211,7 +211,7 @@
 }
 
 .v-sidebar .sidebar-content.is-light {
-  background-color: var(--blm-white-ter);
+  background-color: var(--white-ter);
 }
 
 .v-sidebar .sidebar-content.is-dark {
@@ -379,7 +379,7 @@
 }
 
 .v-tooltip.is-top.is-light:before {
-  border-top: 5px solid var(--blm-white-ter);
+  border-top: 5px solid var(--white-ter);
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
   bottom: calc(100% + 2px);
@@ -470,7 +470,7 @@
 
 .v-tooltip.is-right.is-light:before {
   border-top: 5px solid transparent;
-  border-right: 5px solid var(--blm-white-ter);
+  border-right: 5px solid var(--white-ter);
   border-bottom: 5px solid transparent;
   left: calc(100% + 2px);
 }
@@ -560,7 +560,7 @@
 
 .v-tooltip.is-bottom.is-light:before {
   border-right: 5px solid transparent;
-  border-bottom: 5px solid var(--blm-white-ter);
+  border-bottom: 5px solid var(--white-ter);
   border-left: 5px solid transparent;
   top: calc(100% + 2px);
 }
@@ -651,7 +651,7 @@
 .v-tooltip.is-left.is-light:before {
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid var(--blm-white-ter);
+  border-left: 5px solid var(--white-ter);
   right: calc(100% + 2px);
 }
 
@@ -757,8 +757,8 @@
 }
 
 .v-tooltip.is-light:after {
-  background: var(--blm-white-ter);
-  color: rgba(0, 0, 0, 0.7);
+  background: var(--white-ter);
+  color: #fff;
 }
 
 .v-tooltip.is-dark:after {
@@ -869,7 +869,7 @@
 }
 
 .switch input[type=checkbox] + .check.is-light-passive, .switch input[type=checkbox] + .check:hover {
-  background: var(--blm-white-ter);
+  background: var(--white-ter);
 }
 
 .switch input[type=checkbox] + .check.input[type=checkbox] + .switch input[type=checkbox] + .check.check {
@@ -938,7 +938,7 @@
   border-radius: 4px;
   width: 1.175em;
   height: 1.175em;
-  background: var(--blm-white-ter);
+  background: var(--white-ter);
   box-shadow: 0 3px 1px 0 rgba(0, 0, 0, 0.05), 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.05);
   transition: transform 0.5s ease-out;
   will-change: transform;
@@ -963,7 +963,7 @@
 }
 
 .switch input[type=checkbox]:checked + .check.is-light {
-  background: var(--blm-white-ter);
+  background: var(--white-ter);
 }
 
 .switch input[type=checkbox]:checked + .check.is-dark {
@@ -1019,7 +1019,7 @@
 }
 
 .switch input[type=checkbox]:focus + .check.is-light-passive, .switch input[type=checkbox]:active + .check.is-light-passive {
-  box-shadow: 0 0 0.4em var(--blm-white-ter), 0.8;
+  box-shadow: 0 0 0.4em var(--white-ter), 0.8;
 }
 
 .switch input[type=checkbox]:focus + .check.is-dark-passive, .switch input[type=checkbox]:active + .check.is-dark-passive {
@@ -1063,7 +1063,7 @@
 }
 
 .switch input[type=checkbox]:focus:checked + .check.is-light, .switch input[type=checkbox]:active:checked + .check.is-light {
-  box-shadow: 0 0 0.4em var(--blm-white-ter), 0.8;
+  box-shadow: 0 0 0.4em var(--white-ter), 0.8;
 }
 
 .switch input[type=checkbox]:focus:checked + .check.is-dark, .switch input[type=checkbox]:active:checked + .check.is-dark {
@@ -1111,7 +1111,7 @@
 }
 
 .switch:hover input[type=checkbox] + .check.is-light-passive {
-  background: var(--blm-white-ter);
+  background: var(--white-ter);
 }
 
 .switch:hover input[type=checkbox] + .check.is-dark-passive {
@@ -1155,7 +1155,7 @@
 }
 
 .switch:hover input[type=checkbox]:checked + .check.is-light {
-  background: var(--blm-white-ter);
+  background: var(--white-ter);
 }
 
 .switch:hover input[type=checkbox]:checked + .check.is-dark {
@@ -1229,15 +1229,15 @@
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-light-passive {
-  border: 0.1rem solid var(--blm-white-ter);
+  border: 0.1rem solid var(--white-ter);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-light-passive:before {
-  background: var(--blm-white-ter);
+  background: var(--white-ter);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-light-passive:hover {
-  border-color: var(--blm-white-ter);
+  border-color: var(--white-ter);
 }
 
 .switch.is-outlined input[type=checkbox] + .check.is-dark-passive {
@@ -1352,11 +1352,11 @@
 
 .switch.is-outlined input[type=checkbox]:checked + .check.is-light {
   background: transparent;
-  border-color: var(--blm-white-ter);
+  border-color: var(--white-ter);
 }
 
 .switch.is-outlined input[type=checkbox]:checked + .check.is-light:before {
-  background: var(--blm-white-ter);
+  background: var(--white-ter);
 }
 
 .switch.is-outlined input[type=checkbox]:checked + .check.is-dark {
@@ -1445,7 +1445,7 @@
 }
 
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-light {
-  border-color: var(--blm-white-ter);
+  border-color: var(--white-ter);
 }
 
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-dark {
@@ -2215,28 +2215,28 @@ input[type="range"].slider.is-black + output {
 }
 
 input[type="range"].slider.is-light::-moz-range-track {
-  background: var(--blm-white-ter) !important;
+  background: var(--white-ter) !important;
 }
 
 input[type="range"].slider.is-light::-webkit-slider-runnable-track {
-  background: var(--blm-white-ter) !important;
+  background: var(--white-ter) !important;
 }
 
 input[type="range"].slider.is-light::-ms-track {
-  background: var(--blm-white-ter) !important;
+  background: var(--white-ter) !important;
 }
 
 input[type="range"].slider.is-light::-ms-fill-lower {
-  background: var(--blm-white-ter);
+  background: var(--white-ter);
 }
 
 input[type="range"].slider.is-light::-ms-fill-upper {
-  background: var(--blm-white-ter);
+  background: var(--white-ter);
 }
 
 input[type="range"].slider.is-light + output {
-  background-color: var(--blm-white-ter);
-  color: rgba(0, 0, 0, 0.7);
+  background-color: var(--white-ter);
+  color: #fff;
 }
 
 input[type="range"].slider.is-dark::-moz-range-track {
@@ -2616,7 +2616,7 @@ input[type="range"].slider.is-danger + output {
 }
 
 .steps .step-item.is-light::before {
-  background: linear-gradient(to left, #dbdbdb 50%, var(--blm-white-ter) 50%);
+  background: linear-gradient(to left, #dbdbdb 50%, var(--white-ter) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
 }
@@ -2627,8 +2627,8 @@ input[type="range"].slider.is-danger + output {
 
 .steps .step-item.is-light.is-active .step-marker {
   background-color: white;
-  border-color: var(--blm-white-ter);
-  color: var(--blm-white-ter);
+  border-color: var(--white-ter);
+  color: var(--white-ter);
 }
 
 .steps .step-item.is-light.is-completed::before {
@@ -2636,8 +2636,8 @@ input[type="range"].slider.is-danger + output {
 }
 
 .steps .step-item.is-light.is-completed .step-marker {
-  color: rgba(0, 0, 0, 0.7);
-  background-color: var(--blm-white-ter);
+  color: #fff;
+  background-color: var(--white-ter);
 }
 
 .steps .step-item.is-dark::before {

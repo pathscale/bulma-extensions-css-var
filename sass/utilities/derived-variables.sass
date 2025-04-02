@@ -12,7 +12,7 @@ $danger: v("red") !default
 +register(warning, $warning, true)
 +register(danger, $danger, true)
 
-$light: v("white-ter") !default
+$light: var(--white-ter) !default
 $dark: v("grey-darker") !default
 
 
@@ -88,7 +88,7 @@ $dark-invert: findColorInvert("dark") !default
 
 $scheme-main: v("white") !default
 $scheme-main-bis: v("white-bis") !default
-$scheme-main-ter: v("white-ter") !default
+$scheme-main-ter: var(--white-ter) !default
 $scheme-invert: v("black") !default
 $scheme-invert-bis: v("black-bis") !default
 $scheme-invert-ter: v("black-ter") !default
@@ -101,7 +101,7 @@ $scheme-invert-ter: v("black-ter") !default
 +register(scheme-invert-bis, $scheme-invert-bis, true)
 +register(scheme-invert-ter, $scheme-invert-ter, true)
 
-$background: v("white-ter") !default
+$background: var(--white-ter) !default
 
 +register("background", $background, true)
 
