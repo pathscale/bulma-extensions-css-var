@@ -346,7 +346,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  background: var(--blm-modal-bg-bg-clr);
+  background: var(--modal-background-background-color);
   position: fixed;
   z-index: 40;
 }
