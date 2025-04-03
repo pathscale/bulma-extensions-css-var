@@ -38,10 +38,10 @@
   "devDependencies": {
     "autoprefixer": "^9.8.4",
     "clean-css": "^4.2.3",
-    "node-sass": "^7.0.1",
     "postcss": "^7.0.32",
     "postcss-calc": "^7.0.2",
     "postcss-var-optimize": "^0.0.4",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "sass": "^1.86.2"
   }
 }
