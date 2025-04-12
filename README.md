@@ -9,5 +9,5 @@ Add the new component file to sass/components and import it from \_all.sass
 ## Release
 
 ```bash
-npm run build and npm publish
+bun run build && bun publish
 ```

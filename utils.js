@@ -1,4 +1,4 @@
-const sass = require('node-sass')
+const sass = require('sass')
 const path = require('path')
 const fs = require('fs')
 
@@ -75,13 +75,13 @@ const writeOutput = async (output, result, options) => {
 
   const map =
     options.indexOf('--map') >= 0
-      ? { prev: result.map.toString(), inline: false, sourcesContent: false }
+      ? { prev: result.sourceMap?.toString(), inline: false, sourcesContent: false }
       : false
 
   result = await postcss([
     autoprefixer,
     options.indexOf('--full') < 0 ? postcssVarOptimize : postcssCalc,
-  ]).process(result.css, { map, from: output + '.css', to: output + '.css' })
+  ]).process(result.css.toString(), { map, from: output + '.css', to: output + '.css' })
 
   const p = []
   p.push(
@@ -132,18 +132,26 @@ const renderSassSync = (input, output, variables, functions) => {
 
   data += '\n@import "' + input + '";'
   try {
-    return sass.renderSync({
+    const result = sass.renderSync({
       data,
       outFile: output + '.css',
-      includePaths: [path.resolve(process.cwd(), input)],
+      includePaths: [path.resolve(process.cwd(), path.dirname(input))],
       outputStyle: 'expanded',
       sourceMap: true,
       sourceMapContents: true,
-
-      functions,
+      functions
     })
+
+    return {
+      css: result.css,
+      sourceMap: result.sourceMap,
+      stats: {
+        includedFiles: result.stats?.includedFiles || []
+      }
+    }
   } catch (e) {
     console.error(e)
+    throw e
   }
 }
 
