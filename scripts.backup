@@ -1,0 +1,13 @@
+"scripts": {
+  "build": "npm run build:clean && npm run build:sass-vars",
+  "build-clean": "echo 'The build-clean script has been deprecated use build:clean instead' && npm run build:clean --",
+  "build-sass": "echo 'The build-sass script has been deprecated use build:sass instead' && npm run build:sass --",
+  "build:clean": "rimraf css",
+  "build:rtl": "node build.js bulma-extensions-css-var.sass css/bulma-rtl.css --rtl --map --min",
+  "build:sass": "node build.js bulma-extensions-css-var.sass css/bulma-extensions-css-var.css --map --min",
+  "build:sass-vars": "node build.js bulma-extensions-css-var.sass css/bulma-extensions-css-var.css --themeable --full --map --min",
+  "deploy": "npm run build",
+  "rtl": "echo 'The rtl script has been deprecated use build:rtl instead' && npm run build:rtl --",
+  "start": "npm run build:sass -- --watch",
+  "test:theme": "node build.js test/sass/theme.sass test/output/theme.css bulma-extensions-css-var.sass --themeable"
+}
