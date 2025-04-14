@@ -22,16 +22,6 @@
     "LICENSE",
     "README.md"
   ],
-  "scripts": {
-    "build": "bun run build:clean && bun run build:sass-vars",
-    "build:clean": "rimraf css",
-    "build:rtl": "bun build.js bulma-extensions-css-var.sass css/bulma-rtl.css --rtl --map --min",
-    "build:sass": "bun build.js bulma-extensions-css-var.sass css/bulma-extensions-css-var.css --map --min",
-    "build:sass-vars": "bun build.js bulma-extensions-css-var.sass css/bulma-extensions-css-var.css --themeable --full --map --min",
-    "deploy": "bun run build",
-    "start": "bun run build:sass -- --watch",
-    "test:theme": "bun build.js test/sass/theme.sass test/output/theme.css bulma-extensions-css-var.sass --themeable"
-  },
   "devDependencies": {
     "autoprefixer": "^9.8.4",
     "clean-css": "^4.2.3",
