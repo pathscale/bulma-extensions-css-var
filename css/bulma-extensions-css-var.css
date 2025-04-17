@@ -627,35 +627,35 @@ html {
 }
 .v-tooltip.is-light:after {
   background: var(--white-ter);
-  color: #fff;
+  color: hsl(0, 0%, 4%);
 }
 .v-tooltip.is-dark:after {
   background: var(--grey-darker);
-  color: var(--grey-darker);
+  color: hsl(0, 0%, 100%);
 }
 .v-tooltip.is-primary:after {
   background: var(--bul-turquoise);
-  color: var(--bul-turquoise);
+  color: hsl(0, 0%, 100%);
 }
 .v-tooltip.is-link:after {
   background: var(--bul-blue);
-  color: var(--bul-blue);
+  color: hsl(0, 0%, 100%);
 }
 .v-tooltip.is-info:after {
   background: var(--bul-cyan);
-  color: var(--bul-cyan);
+  color: hsl(0, 0%, 100%);
 }
 .v-tooltip.is-success:after {
   background: var(--bul-green);
-  color: var(--bul-green);
+  color: hsl(0, 0%, 100%);
 }
 .v-tooltip.is-warning:after {
   background: var(--warning);
-  color: var(--warning);
+  color: hsl(0, 0%, 4%);
 }
 .v-tooltip.is-danger:after {
   background: var(--danger);
-  color: var(--danger);
+  color: hsl(0, 0%, 100%);
 }
 .v-tooltip:not([data-label=""]).is-always:before, .v-tooltip:not([data-label=""]).is-always:after {
   opacity: 1;
@@ -1815,7 +1815,7 @@ input[type=range].slider.is-light::-ms-fill-upper {
 }
 input[type=range].slider.is-light + output {
   background-color: var(--white-ter);
-  color: #fff;
+  color: hsl(0, 0%, 4%);
 }
 input[type=range].slider.is-dark::-moz-range-track {
   background: var(--grey-darker) !important;
@@ -1834,7 +1834,7 @@ input[type=range].slider.is-dark::-ms-fill-upper {
 }
 input[type=range].slider.is-dark + output {
   background-color: var(--grey-darker);
-  color: var(--grey-darker);
+  color: hsl(0, 0%, 100%);
 }
 input[type=range].slider.is-primary::-moz-range-track {
   background: var(--bul-turquoise) !important;
@@ -1853,7 +1853,7 @@ input[type=range].slider.is-primary::-ms-fill-upper {
 }
 input[type=range].slider.is-primary + output {
   background-color: var(--bul-turquoise);
-  color: var(--bul-turquoise);
+  color: hsl(0, 0%, 100%);
 }
 input[type=range].slider.is-link::-moz-range-track {
   background: var(--bul-blue) !important;
@@ -1872,7 +1872,7 @@ input[type=range].slider.is-link::-ms-fill-upper {
 }
 input[type=range].slider.is-link + output {
   background-color: var(--bul-blue);
-  color: var(--bul-blue);
+  color: hsl(0, 0%, 100%);
 }
 input[type=range].slider.is-info::-moz-range-track {
   background: var(--bul-cyan) !important;
@@ -1891,7 +1891,7 @@ input[type=range].slider.is-info::-ms-fill-upper {
 }
 input[type=range].slider.is-info + output {
   background-color: var(--bul-cyan);
-  color: var(--bul-cyan);
+  color: hsl(0, 0%, 100%);
 }
 input[type=range].slider.is-success::-moz-range-track {
   background: var(--bul-green) !important;
@@ -1910,7 +1910,7 @@ input[type=range].slider.is-success::-ms-fill-upper {
 }
 input[type=range].slider.is-success + output {
   background-color: var(--bul-green);
-  color: var(--bul-green);
+  color: hsl(0, 0%, 100%);
 }
 input[type=range].slider.is-warning::-moz-range-track {
   background: var(--warning) !important;
@@ -1929,7 +1929,7 @@ input[type=range].slider.is-warning::-ms-fill-upper {
 }
 input[type=range].slider.is-warning + output {
   background-color: var(--warning);
-  color: var(--warning);
+  color: hsl(0, 0%, 4%);
 }
 input[type=range].slider.is-danger::-moz-range-track {
   background: var(--danger) !important;
@@ -1948,7 +1948,7 @@ input[type=range].slider.is-danger::-ms-fill-upper {
 }
 input[type=range].slider.is-danger + output {
   background-color: var(--danger);
-  color: var(--danger);
+  color: hsl(0, 0%, 100%);
 }
 
 .pagination-next, .pagination-previous {
@@ -2133,7 +2133,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-light.is-completed .step-marker {
-  color: #fff;
+  color: hsl(0, 0%, 4%);
   background-color: var(--white-ter);
 }
 .steps .step-item.is-dark::before {
@@ -2153,7 +2153,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-dark.is-completed .step-marker {
-  color: var(--grey-darker);
+  color: hsl(0, 0%, 100%);
   background-color: var(--grey-darker);
 }
 .steps .step-item.is-primary::before {
@@ -2173,7 +2173,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-primary.is-completed .step-marker {
-  color: var(--bul-turquoise);
+  color: hsl(0, 0%, 100%);
   background-color: var(--bul-turquoise);
 }
 .steps .step-item.is-link::before {
@@ -2193,7 +2193,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-link.is-completed .step-marker {
-  color: var(--bul-blue);
+  color: hsl(0, 0%, 100%);
   background-color: var(--bul-blue);
 }
 .steps .step-item.is-info::before {
@@ -2213,7 +2213,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-info.is-completed .step-marker {
-  color: var(--bul-cyan);
+  color: hsl(0, 0%, 100%);
   background-color: var(--bul-cyan);
 }
 .steps .step-item.is-success::before {
@@ -2233,7 +2233,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-success.is-completed .step-marker {
-  color: var(--bul-green);
+  color: hsl(0, 0%, 100%);
   background-color: var(--bul-green);
 }
 .steps .step-item.is-warning::before {
@@ -2253,7 +2253,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-warning.is-completed .step-marker {
-  color: var(--warning);
+  color: hsl(0, 0%, 4%);
   background-color: var(--warning);
 }
 .steps .step-item.is-danger::before {
@@ -2273,7 +2273,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-danger.is-completed .step-marker {
-  color: var(--danger);
+  color: hsl(0, 0%, 100%);
   background-color: var(--danger);
 }
 .steps .steps-content {
