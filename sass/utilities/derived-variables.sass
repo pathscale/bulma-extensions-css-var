@@ -202,7 +202,21 @@ $custom-colors-list: null !default
 $custom-colors: null !default
 
 //Deprecated
-$colors: mergeColorMaps(("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark), "primary": ($primary, $primary), "link": ($link, $link), "info": ($info, $info), "success": ($success, $success), "warning": ($warning, $warning), "danger": ($danger, $danger)), $custom-colors) !default
+$colors: mergeColorMaps(
+  (
+    "white": ($white, $black),
+    "black": ($black, $white),
+    "light": ($light, $black),
+    "dark": ($dark, $white),
+    "primary": ($primary, $white),
+    "link": ($link, $white),
+    "info": ($info, $white),
+    "success": ($success, $white),
+    "warning": ($warning, $black),
+    "danger": ($danger, $white)
+  ),
+  $custom-colors
+) !default
 
 @if $custom-colors
   @warn "The $custom-colors variable was deprecated use $custom-colors-list instead"
