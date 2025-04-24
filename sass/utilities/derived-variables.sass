@@ -1,9 +1,9 @@
-$primary: var(--bul-turquoise) !default
+$primary: var(--primary) !default
 
 +register(primary, $primary, true)
 
-$info: var(--bul-cyan) !default
-$success: var(--bul-green) !default
+$info: var(--info) !default
+$success: var(--success) !default
 $warning: var(--warning) !default
 $danger: var(--danger) !default
 
@@ -14,7 +14,6 @@ $danger: var(--danger) !default
 
 $light: var(--white-ter) !default
 $dark: var(--grey-darker) !default
-
 
 +register("light", $light, true)
 +register("dark", $dark, true)
@@ -57,7 +56,6 @@ $danger-dark: findDarkColor("danger") !default
 $light-invert: findColorInvert("light") !default
 $dark-invert: findColorInvert("dark") !default
 
-
 +register(white-invert, v("black"), true)
 +register(black-invert, v("white"), true)
 
@@ -93,7 +91,6 @@ $scheme-invert: v("black") !default
 $scheme-invert-bis: v("black-bis") !default
 $scheme-invert-ter: v("black-ter") !default
 
-
 +register(scheme-main, $scheme-main, true)
 +register(scheme-main-bis, $scheme-main-bis, true)
 +register(scheme-main-ter, $scheme-main-ter, true)
@@ -114,7 +111,6 @@ $border-light-hover: v("grey-light") !default
 +register(border-hover, $border-hover, true)
 +register(border-light, $border-light, true)
 +register(border-light-hover, $border-light-hover, true)
-
 
 // Text colors
 
@@ -145,7 +141,7 @@ $pre-background: v("background") !default
 
 // Link colors
 
-$link: var(--bul-blue) !default
+$link: var(--link) !default
 
 +register(link, $link, true)
 
@@ -163,7 +159,7 @@ $link-hover: var(--grey-darker) !default
 $link-hover-border: v("grey-light") !default
 
 $link-focus: var(--grey-darker) !default
-$link-focus-border: var(--bul-blue) !default
+$link-focus-border: var(--link) !default
 
 $link-active: var(--grey-darker) !default
 $link-active-border: v("grey-dark") !default
@@ -174,7 +170,6 @@ $link-active-border: v("grey-dark") !default
 +register(link-focus-border, $link-focus-border, true)
 +register(link-active, $link-active, true)
 +register(link-active-border, $link-active-border, true)
-
 
 // Typography
 
@@ -190,7 +185,6 @@ $size-small: var(--bul-s-7) !default
 $size-normal: var(--bul-s-6) !default
 $size-medium: var(--bul-s-5) !default
 $size-large: var(--bul-s-4) !default
-
 +register(size-small, $size-small, true)
 +register(size-normal, $size-normal, true)
 +register(size-medium, $size-medium, true)
@@ -220,7 +214,6 @@ $shades: ("black-bis", "black-ter", "grey-darker", "grey-dark", "grey", "grey-li
   $shades: append($shades, $custom-shades)
 
 $sizes: v("size-1") v("size-2") v("size-3") v("size-4") v("size-5") v("size-6") v("size-7") !default
-
 
 @if $css_vars and $shorten
   @each $var in $css_vars

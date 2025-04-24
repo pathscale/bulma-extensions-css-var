@@ -145,10 +145,6 @@
 }
 
 html {
-  --bul-turquoise: hsla(calc(var(--primary-h) - 10deg), calc(var(--primary-s) + 10%), calc(var(--primary-l) - 10%), var(--primary-a));
-  --bul-blue: hsla(calc(var(--link-h) - 10deg), calc(var(--link-s) + 10%), calc(var(--link-l) - 10%), var(--link-a));
-  --bul-cyan: hsla(calc(var(--info-h) - 10deg), calc(var(--info-s) + 10%), calc(var(--info-l) - 10%), var(--info-a));
-  --bul-green: hsla(calc(var(--success-h) - 10deg), calc(var(--success-s) + 10%), calc(var(--success-l) - 10%), var(--success-a));
   --bul-s-7: 0.75rem;
   --bul-s-6: 1rem;
   --bul-s-5: 1.25rem;
@@ -174,16 +170,16 @@ html {
   background-color: var(--grey-darker);
 }
 .v-sidebar .sidebar-content.is-primary {
-  background-color: var(--bul-turquoise);
+  background-color: var(--primary);
 }
 .v-sidebar .sidebar-content.is-link {
-  background-color: var(--bul-blue);
+  background-color: var(--link);
 }
 .v-sidebar .sidebar-content.is-info {
-  background-color: var(--bul-cyan);
+  background-color: var(--info);
 }
 .v-sidebar .sidebar-content.is-success {
-  background-color: var(--bul-green);
+  background-color: var(--success);
 }
 .v-sidebar .sidebar-content.is-warning {
   background-color: var(--warning);
@@ -319,25 +315,25 @@ html {
   bottom: calc(100% + 2px);
 }
 .v-tooltip.is-top.is-primary:before {
-  border-top: 5px solid var(--bul-turquoise);
+  border-top: 5px solid var(--primary);
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
   bottom: calc(100% + 2px);
 }
 .v-tooltip.is-top.is-link:before {
-  border-top: 5px solid var(--bul-blue);
+  border-top: 5px solid var(--link);
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
   bottom: calc(100% + 2px);
 }
 .v-tooltip.is-top.is-info:before {
-  border-top: 5px solid var(--bul-cyan);
+  border-top: 5px solid var(--info);
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
   bottom: calc(100% + 2px);
 }
 .v-tooltip.is-top.is-success:before {
-  border-top: 5px solid var(--bul-green);
+  border-top: 5px solid var(--success);
   border-right: 5px solid transparent;
   border-left: 5px solid transparent;
   bottom: calc(100% + 2px);
@@ -396,25 +392,25 @@ html {
 }
 .v-tooltip.is-right.is-primary:before {
   border-top: 5px solid transparent;
-  border-right: 5px solid var(--bul-turquoise);
+  border-right: 5px solid var(--primary);
   border-bottom: 5px solid transparent;
   left: calc(100% + 2px);
 }
 .v-tooltip.is-right.is-link:before {
   border-top: 5px solid transparent;
-  border-right: 5px solid var(--bul-blue);
+  border-right: 5px solid var(--link);
   border-bottom: 5px solid transparent;
   left: calc(100% + 2px);
 }
 .v-tooltip.is-right.is-info:before {
   border-top: 5px solid transparent;
-  border-right: 5px solid var(--bul-cyan);
+  border-right: 5px solid var(--info);
   border-bottom: 5px solid transparent;
   left: calc(100% + 2px);
 }
 .v-tooltip.is-right.is-success:before {
   border-top: 5px solid transparent;
-  border-right: 5px solid var(--bul-green);
+  border-right: 5px solid var(--success);
   border-bottom: 5px solid transparent;
   left: calc(100% + 2px);
 }
@@ -472,25 +468,25 @@ html {
 }
 .v-tooltip.is-bottom.is-primary:before {
   border-right: 5px solid transparent;
-  border-bottom: 5px solid var(--bul-turquoise);
+  border-bottom: 5px solid var(--primary);
   border-left: 5px solid transparent;
   top: calc(100% + 2px);
 }
 .v-tooltip.is-bottom.is-link:before {
   border-right: 5px solid transparent;
-  border-bottom: 5px solid var(--bul-blue);
+  border-bottom: 5px solid var(--link);
   border-left: 5px solid transparent;
   top: calc(100% + 2px);
 }
 .v-tooltip.is-bottom.is-info:before {
   border-right: 5px solid transparent;
-  border-bottom: 5px solid var(--bul-cyan);
+  border-bottom: 5px solid var(--info);
   border-left: 5px solid transparent;
   top: calc(100% + 2px);
 }
 .v-tooltip.is-bottom.is-success:before {
   border-right: 5px solid transparent;
-  border-bottom: 5px solid var(--bul-green);
+  border-bottom: 5px solid var(--success);
   border-left: 5px solid transparent;
   top: calc(100% + 2px);
 }
@@ -549,25 +545,25 @@ html {
 .v-tooltip.is-left.is-primary:before {
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid var(--bul-turquoise);
+  border-left: 5px solid var(--primary);
   right: calc(100% + 2px);
 }
 .v-tooltip.is-left.is-link:before {
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid var(--bul-blue);
+  border-left: 5px solid var(--link);
   right: calc(100% + 2px);
 }
 .v-tooltip.is-left.is-info:before {
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid var(--bul-cyan);
+  border-left: 5px solid var(--info);
   right: calc(100% + 2px);
 }
 .v-tooltip.is-left.is-success:before {
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
-  border-left: 5px solid var(--bul-green);
+  border-left: 5px solid var(--success);
   right: calc(100% + 2px);
 }
 .v-tooltip.is-left.is-warning:before {
@@ -634,20 +630,20 @@ html {
   color: var(--grey-darker);
 }
 .v-tooltip.is-primary:after {
-  background: var(--bul-turquoise);
-  color: var(--bul-turquoise);
+  background: var(--primary);
+  color: var(--primary);
 }
 .v-tooltip.is-link:after {
-  background: var(--bul-blue);
-  color: var(--bul-blue);
+  background: var(--link);
+  color: var(--link);
 }
 .v-tooltip.is-info:after {
-  background: var(--bul-cyan);
-  color: var(--bul-cyan);
+  background: var(--info);
+  color: var(--info);
 }
 .v-tooltip.is-success:after {
-  background: var(--bul-green);
-  color: var(--bul-green);
+  background: var(--success);
+  color: var(--success);
 }
 .v-tooltip.is-warning:after {
   background: var(--warning);
@@ -730,25 +726,25 @@ html {
   background: "pink";
 }
 .switch input[type=checkbox] + .check.is-primary-passive, .switch input[type=checkbox] + .check:hover {
-  background: var(--bul-turquoise);
+  background: var(--primary);
 }
 .switch input[type=checkbox] + .check.input[type=checkbox] + .switch input[type=checkbox] + .check.check {
   background: "pink";
 }
 .switch input[type=checkbox] + .check.is-link-passive, .switch input[type=checkbox] + .check:hover {
-  background: var(--bul-blue);
+  background: var(--link);
 }
 .switch input[type=checkbox] + .check.input[type=checkbox] + .switch input[type=checkbox] + .check.check {
   background: "pink";
 }
 .switch input[type=checkbox] + .check.is-info-passive, .switch input[type=checkbox] + .check:hover {
-  background: var(--bul-cyan);
+  background: var(--info);
 }
 .switch input[type=checkbox] + .check.input[type=checkbox] + .switch input[type=checkbox] + .check.check {
   background: "pink";
 }
 .switch input[type=checkbox] + .check.is-success-passive, .switch input[type=checkbox] + .check:hover {
-  background: var(--bul-green);
+  background: var(--success);
 }
 .switch input[type=checkbox] + .check.input[type=checkbox] + .switch input[type=checkbox] + .check.check {
   background: "pink";
@@ -782,7 +778,7 @@ html {
   border-radius: 4px;
 }
 .switch input[type=checkbox]:checked + .check {
-  background: var(--bul-turquoise);
+  background: var(--primary);
 }
 .switch input[type=checkbox]:checked + .check.is-white {
   background: hsl(0, 0%, 100%);
@@ -797,16 +793,16 @@ html {
   background: var(--grey-darker);
 }
 .switch input[type=checkbox]:checked + .check.is-primary {
-  background: var(--bul-turquoise);
+  background: var(--primary);
 }
 .switch input[type=checkbox]:checked + .check.is-link {
-  background: var(--bul-blue);
+  background: var(--link);
 }
 .switch input[type=checkbox]:checked + .check.is-info {
-  background: var(--bul-cyan);
+  background: var(--info);
 }
 .switch input[type=checkbox]:checked + .check.is-success {
-  background: var(--bul-green);
+  background: var(--success);
 }
 .switch input[type=checkbox]:checked + .check.is-warning {
   background: var(--warning);
@@ -839,16 +835,16 @@ html {
   box-shadow: 0 0 0.4em var(--grey-darker), 0.8;
 }
 .switch input[type=checkbox]:focus + .check.is-primary-passive, .switch input[type=checkbox]:active + .check.is-primary-passive {
-  box-shadow: 0 0 0.4em var(--bul-turquoise), 0.8;
+  box-shadow: 0 0 0.4em var(--primary), 0.8;
 }
 .switch input[type=checkbox]:focus + .check.is-link-passive, .switch input[type=checkbox]:active + .check.is-link-passive {
-  box-shadow: 0 0 0.4em var(--bul-blue), 0.8;
+  box-shadow: 0 0 0.4em var(--link), 0.8;
 }
 .switch input[type=checkbox]:focus + .check.is-info-passive, .switch input[type=checkbox]:active + .check.is-info-passive {
-  box-shadow: 0 0 0.4em var(--bul-cyan), 0.8;
+  box-shadow: 0 0 0.4em var(--info), 0.8;
 }
 .switch input[type=checkbox]:focus + .check.is-success-passive, .switch input[type=checkbox]:active + .check.is-success-passive {
-  box-shadow: 0 0 0.4em var(--bul-green), 0.8;
+  box-shadow: 0 0 0.4em var(--success), 0.8;
 }
 .switch input[type=checkbox]:focus + .check.is-warning-passive, .switch input[type=checkbox]:active + .check.is-warning-passive {
   box-shadow: 0 0 0.4em var(--warning), 0.8;
@@ -857,7 +853,7 @@ html {
   box-shadow: 0 0 0.4em var(--danger), 0.8;
 }
 .switch input[type=checkbox]:focus:checked + .check, .switch input[type=checkbox]:active:checked + .check {
-  box-shadow: 0 0 0.4em var(--bul-turquoise);
+  box-shadow: 0 0 0.4em var(--primary);
 }
 .switch input[type=checkbox]:focus:checked + .check.is-white, .switch input[type=checkbox]:active:checked + .check.is-white {
   box-shadow: 0 0 0.4em hsl(0, 0%, 100%), 0.8;
@@ -872,16 +868,16 @@ html {
   box-shadow: 0 0 0.4em var(--grey-darker), 0.8;
 }
 .switch input[type=checkbox]:focus:checked + .check.is-primary, .switch input[type=checkbox]:active:checked + .check.is-primary {
-  box-shadow: 0 0 0.4em var(--bul-turquoise), 0.8;
+  box-shadow: 0 0 0.4em var(--primary), 0.8;
 }
 .switch input[type=checkbox]:focus:checked + .check.is-link, .switch input[type=checkbox]:active:checked + .check.is-link {
-  box-shadow: 0 0 0.4em var(--bul-blue), 0.8;
+  box-shadow: 0 0 0.4em var(--link), 0.8;
 }
 .switch input[type=checkbox]:focus:checked + .check.is-info, .switch input[type=checkbox]:active:checked + .check.is-info {
-  box-shadow: 0 0 0.4em var(--bul-cyan), 0.8;
+  box-shadow: 0 0 0.4em var(--info), 0.8;
 }
 .switch input[type=checkbox]:focus:checked + .check.is-success, .switch input[type=checkbox]:active:checked + .check.is-success {
-  box-shadow: 0 0 0.4em var(--bul-green), 0.8;
+  box-shadow: 0 0 0.4em var(--success), 0.8;
 }
 .switch input[type=checkbox]:focus:checked + .check.is-warning, .switch input[type=checkbox]:active:checked + .check.is-warning {
   box-shadow: 0 0 0.4em var(--warning), 0.8;
@@ -908,16 +904,16 @@ html {
   background: var(--grey-darker);
 }
 .switch:hover input[type=checkbox] + .check.is-primary-passive {
-  background: var(--bul-turquoise);
+  background: var(--primary);
 }
 .switch:hover input[type=checkbox] + .check.is-link-passive {
-  background: var(--bul-blue);
+  background: var(--link);
 }
 .switch:hover input[type=checkbox] + .check.is-info-passive {
-  background: var(--bul-cyan);
+  background: var(--info);
 }
 .switch:hover input[type=checkbox] + .check.is-success-passive {
-  background: var(--bul-green);
+  background: var(--success);
 }
 .switch:hover input[type=checkbox] + .check.is-warning-passive {
   background: var(--warning);
@@ -926,7 +922,7 @@ html {
   background: var(--danger);
 }
 .switch:hover input[type=checkbox]:checked + .check {
-  background: var(--bul-turquoise);
+  background: var(--primary);
 }
 .switch:hover input[type=checkbox]:checked + .check.is-white {
   background: hsl(0, 0%, 100%);
@@ -941,16 +937,16 @@ html {
   background: var(--grey-darker);
 }
 .switch:hover input[type=checkbox]:checked + .check.is-primary {
-  background: var(--bul-turquoise);
+  background: var(--primary);
 }
 .switch:hover input[type=checkbox]:checked + .check.is-link {
-  background: var(--bul-blue);
+  background: var(--link);
 }
 .switch:hover input[type=checkbox]:checked + .check.is-info {
-  background: var(--bul-cyan);
+  background: var(--info);
 }
 .switch:hover input[type=checkbox]:checked + .check.is-success {
-  background: var(--bul-green);
+  background: var(--success);
 }
 .switch:hover input[type=checkbox]:checked + .check.is-warning {
   background: var(--warning);
@@ -1009,40 +1005,40 @@ html {
   border-color: var(--grey-darker);
 }
 .switch.is-outlined input[type=checkbox] + .check.is-primary-passive {
-  border: 0.1rem solid var(--bul-turquoise);
+  border: 0.1rem solid var(--primary);
 }
 .switch.is-outlined input[type=checkbox] + .check.is-primary-passive:before {
-  background: var(--bul-turquoise);
+  background: var(--primary);
 }
 .switch.is-outlined input[type=checkbox] + .check.is-primary-passive:hover {
-  border-color: var(--bul-turquoise);
+  border-color: var(--primary);
 }
 .switch.is-outlined input[type=checkbox] + .check.is-link-passive {
-  border: 0.1rem solid var(--bul-blue);
+  border: 0.1rem solid var(--link);
 }
 .switch.is-outlined input[type=checkbox] + .check.is-link-passive:before {
-  background: var(--bul-blue);
+  background: var(--link);
 }
 .switch.is-outlined input[type=checkbox] + .check.is-link-passive:hover {
-  border-color: var(--bul-blue);
+  border-color: var(--link);
 }
 .switch.is-outlined input[type=checkbox] + .check.is-info-passive {
-  border: 0.1rem solid var(--bul-cyan);
+  border: 0.1rem solid var(--info);
 }
 .switch.is-outlined input[type=checkbox] + .check.is-info-passive:before {
-  background: var(--bul-cyan);
+  background: var(--info);
 }
 .switch.is-outlined input[type=checkbox] + .check.is-info-passive:hover {
-  border-color: var(--bul-cyan);
+  border-color: var(--info);
 }
 .switch.is-outlined input[type=checkbox] + .check.is-success-passive {
-  border: 0.1rem solid var(--bul-green);
+  border: 0.1rem solid var(--success);
 }
 .switch.is-outlined input[type=checkbox] + .check.is-success-passive:before {
-  background: var(--bul-green);
+  background: var(--success);
 }
 .switch.is-outlined input[type=checkbox] + .check.is-success-passive:hover {
-  border-color: var(--bul-green);
+  border-color: var(--success);
 }
 .switch.is-outlined input[type=checkbox] + .check.is-warning-passive {
   border: 0.1rem solid var(--warning);
@@ -1066,7 +1062,7 @@ html {
   background: hsl(0, 0%, 71%);
 }
 .switch.is-outlined input[type=checkbox]:checked + .check {
-  border-color: var(--bul-turquoise);
+  border-color: var(--primary);
 }
 .switch.is-outlined input[type=checkbox]:checked + .check.is-white {
   background: transparent;
@@ -1098,31 +1094,31 @@ html {
 }
 .switch.is-outlined input[type=checkbox]:checked + .check.is-primary {
   background: transparent;
-  border-color: var(--bul-turquoise);
+  border-color: var(--primary);
 }
 .switch.is-outlined input[type=checkbox]:checked + .check.is-primary:before {
-  background: var(--bul-turquoise);
+  background: var(--primary);
 }
 .switch.is-outlined input[type=checkbox]:checked + .check.is-link {
   background: transparent;
-  border-color: var(--bul-blue);
+  border-color: var(--link);
 }
 .switch.is-outlined input[type=checkbox]:checked + .check.is-link:before {
-  background: var(--bul-blue);
+  background: var(--link);
 }
 .switch.is-outlined input[type=checkbox]:checked + .check.is-info {
   background: transparent;
-  border-color: var(--bul-cyan);
+  border-color: var(--info);
 }
 .switch.is-outlined input[type=checkbox]:checked + .check.is-info:before {
-  background: var(--bul-cyan);
+  background: var(--info);
 }
 .switch.is-outlined input[type=checkbox]:checked + .check.is-success {
   background: transparent;
-  border-color: var(--bul-green);
+  border-color: var(--success);
 }
 .switch.is-outlined input[type=checkbox]:checked + .check.is-success:before {
-  background: var(--bul-green);
+  background: var(--success);
 }
 .switch.is-outlined input[type=checkbox]:checked + .check.is-warning {
   background: transparent;
@@ -1139,7 +1135,7 @@ html {
   background: var(--danger);
 }
 .switch.is-outlined input[type=checkbox]:checked + .check:before {
-  background: var(--bul-turquoise);
+  background: var(--primary);
 }
 .switch.is-outlined:hover input[type=checkbox] + .check {
   background: transparent;
@@ -1147,7 +1143,7 @@ html {
 }
 .switch.is-outlined:hover input[type=checkbox]:checked + .check {
   background: transparent;
-  border-color: var(--bul-turquoise);
+  border-color: var(--primary);
 }
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-white {
   border-color: hsl(0, 0%, 100%);
@@ -1162,16 +1158,16 @@ html {
   border-color: var(--grey-darker);
 }
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-primary {
-  border-color: var(--bul-turquoise);
+  border-color: var(--primary);
 }
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-link {
-  border-color: var(--bul-blue);
+  border-color: var(--link);
 }
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-info {
-  border-color: var(--bul-cyan);
+  border-color: var(--info);
 }
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-success {
-  border-color: var(--bul-green);
+  border-color: var(--success);
 }
 .switch.is-outlined:hover input[type=checkbox]:checked + .check.is-warning {
   border-color: var(--warning);
@@ -1837,80 +1833,80 @@ input[type=range].slider.is-dark + output {
   color: var(--grey-darker);
 }
 input[type=range].slider.is-primary::-moz-range-track {
-  background: var(--bul-turquoise) !important;
+  background: var(--primary) !important;
 }
 input[type=range].slider.is-primary::-webkit-slider-runnable-track {
-  background: var(--bul-turquoise) !important;
+  background: var(--primary) !important;
 }
 input[type=range].slider.is-primary::-ms-track {
-  background: var(--bul-turquoise) !important;
+  background: var(--primary) !important;
 }
 input[type=range].slider.is-primary::-ms-fill-lower {
-  background: var(--bul-turquoise);
+  background: var(--primary);
 }
 input[type=range].slider.is-primary::-ms-fill-upper {
-  background: var(--bul-turquoise);
+  background: var(--primary);
 }
 input[type=range].slider.is-primary + output {
-  background-color: var(--bul-turquoise);
-  color: var(--bul-turquoise);
+  background-color: var(--primary);
+  color: var(--primary);
 }
 input[type=range].slider.is-link::-moz-range-track {
-  background: var(--bul-blue) !important;
+  background: var(--link) !important;
 }
 input[type=range].slider.is-link::-webkit-slider-runnable-track {
-  background: var(--bul-blue) !important;
+  background: var(--link) !important;
 }
 input[type=range].slider.is-link::-ms-track {
-  background: var(--bul-blue) !important;
+  background: var(--link) !important;
 }
 input[type=range].slider.is-link::-ms-fill-lower {
-  background: var(--bul-blue);
+  background: var(--link);
 }
 input[type=range].slider.is-link::-ms-fill-upper {
-  background: var(--bul-blue);
+  background: var(--link);
 }
 input[type=range].slider.is-link + output {
-  background-color: var(--bul-blue);
-  color: var(--bul-blue);
+  background-color: var(--link);
+  color: var(--link);
 }
 input[type=range].slider.is-info::-moz-range-track {
-  background: var(--bul-cyan) !important;
+  background: var(--info) !important;
 }
 input[type=range].slider.is-info::-webkit-slider-runnable-track {
-  background: var(--bul-cyan) !important;
+  background: var(--info) !important;
 }
 input[type=range].slider.is-info::-ms-track {
-  background: var(--bul-cyan) !important;
+  background: var(--info) !important;
 }
 input[type=range].slider.is-info::-ms-fill-lower {
-  background: var(--bul-cyan);
+  background: var(--info);
 }
 input[type=range].slider.is-info::-ms-fill-upper {
-  background: var(--bul-cyan);
+  background: var(--info);
 }
 input[type=range].slider.is-info + output {
-  background-color: var(--bul-cyan);
-  color: var(--bul-cyan);
+  background-color: var(--info);
+  color: var(--info);
 }
 input[type=range].slider.is-success::-moz-range-track {
-  background: var(--bul-green) !important;
+  background: var(--success) !important;
 }
 input[type=range].slider.is-success::-webkit-slider-runnable-track {
-  background: var(--bul-green) !important;
+  background: var(--success) !important;
 }
 input[type=range].slider.is-success::-ms-track {
-  background: var(--bul-green) !important;
+  background: var(--success) !important;
 }
 input[type=range].slider.is-success::-ms-fill-lower {
-  background: var(--bul-green);
+  background: var(--success);
 }
 input[type=range].slider.is-success::-ms-fill-upper {
-  background: var(--bul-green);
+  background: var(--success);
 }
 input[type=range].slider.is-success + output {
-  background-color: var(--bul-green);
-  color: var(--bul-green);
+  background-color: var(--success);
+  color: var(--success);
 }
 input[type=range].slider.is-warning::-moz-range-track {
   background: var(--warning) !important;
@@ -2040,7 +2036,7 @@ input[type=range].slider.is-danger + output {
   position: absolute;
 }
 .steps .step-item::before {
-  background: linear-gradient(to left, hsl(0, 0%, 86%) 50%, var(--bul-turquoise) 50%);
+  background: linear-gradient(to left, hsl(0, 0%, 86%) 50%, var(--primary) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
 }
@@ -2052,15 +2048,15 @@ input[type=range].slider.is-danger + output {
 }
 .steps .step-item.is-active .step-marker {
   background-color: hsl(0, 0%, 100%);
-  border-color: var(--bul-turquoise);
-  color: var(--bul-turquoise);
+  border-color: var(--primary);
+  color: var(--primary);
 }
 .steps .step-item.is-completed::before {
   background-position: left bottom;
 }
 .steps .step-item.is-completed .step-marker {
   color: hsl(0, 0%, 100%);
-  background-color: var(--bul-turquoise);
+  background-color: var(--primary);
 }
 .steps .step-item .step-marker {
   align-items: center;
@@ -2157,7 +2153,7 @@ input[type=range].slider.is-danger + output {
   background-color: var(--grey-darker);
 }
 .steps .step-item.is-primary::before {
-  background: linear-gradient(to left, hsl(0, 0%, 86%) 50%, var(--bul-turquoise) 50%);
+  background: linear-gradient(to left, hsl(0, 0%, 86%) 50%, var(--primary) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
 }
@@ -2166,18 +2162,18 @@ input[type=range].slider.is-danger + output {
 }
 .steps .step-item.is-primary.is-active .step-marker {
   background-color: hsl(0, 0%, 100%);
-  border-color: var(--bul-turquoise);
-  color: var(--bul-turquoise);
+  border-color: var(--primary);
+  color: var(--primary);
 }
 .steps .step-item.is-primary.is-completed::before {
   background-position: left bottom;
 }
 .steps .step-item.is-primary.is-completed .step-marker {
-  color: var(--bul-turquoise);
-  background-color: var(--bul-turquoise);
+  color: var(--primary);
+  background-color: var(--primary);
 }
 .steps .step-item.is-link::before {
-  background: linear-gradient(to left, hsl(0, 0%, 86%) 50%, var(--bul-blue) 50%);
+  background: linear-gradient(to left, hsl(0, 0%, 86%) 50%, var(--link) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
 }
@@ -2186,18 +2182,18 @@ input[type=range].slider.is-danger + output {
 }
 .steps .step-item.is-link.is-active .step-marker {
   background-color: hsl(0, 0%, 100%);
-  border-color: var(--bul-blue);
-  color: var(--bul-blue);
+  border-color: var(--link);
+  color: var(--link);
 }
 .steps .step-item.is-link.is-completed::before {
   background-position: left bottom;
 }
 .steps .step-item.is-link.is-completed .step-marker {
-  color: var(--bul-blue);
-  background-color: var(--bul-blue);
+  color: var(--link);
+  background-color: var(--link);
 }
 .steps .step-item.is-info::before {
-  background: linear-gradient(to left, hsl(0, 0%, 86%) 50%, var(--bul-cyan) 50%);
+  background: linear-gradient(to left, hsl(0, 0%, 86%) 50%, var(--info) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
 }
@@ -2206,18 +2202,18 @@ input[type=range].slider.is-danger + output {
 }
 .steps .step-item.is-info.is-active .step-marker {
   background-color: hsl(0, 0%, 100%);
-  border-color: var(--bul-cyan);
-  color: var(--bul-cyan);
+  border-color: var(--info);
+  color: var(--info);
 }
 .steps .step-item.is-info.is-completed::before {
   background-position: left bottom;
 }
 .steps .step-item.is-info.is-completed .step-marker {
-  color: var(--bul-cyan);
-  background-color: var(--bul-cyan);
+  color: var(--info);
+  background-color: var(--info);
 }
 .steps .step-item.is-success::before {
-  background: linear-gradient(to left, hsl(0, 0%, 86%) 50%, var(--bul-green) 50%);
+  background: linear-gradient(to left, hsl(0, 0%, 86%) 50%, var(--success) 50%);
   background-size: 200% 100%;
   background-position: right bottom;
 }
@@ -2226,15 +2222,15 @@ input[type=range].slider.is-danger + output {
 }
 .steps .step-item.is-success.is-active .step-marker {
   background-color: hsl(0, 0%, 100%);
-  border-color: var(--bul-green);
-  color: var(--bul-green);
+  border-color: var(--success);
+  color: var(--success);
 }
 .steps .step-item.is-success.is-completed::before {
   background-position: left bottom;
 }
 .steps .step-item.is-success.is-completed .step-marker {
-  color: var(--bul-green);
-  background-color: var(--bul-green);
+  color: var(--success);
+  background-color: var(--success);
 }
 .steps .step-item.is-warning::before {
   background: linear-gradient(to left, hsl(0, 0%, 86%) 50%, var(--warning) 50%);
