@@ -38,23 +38,23 @@ $red-invert: findColorInvert("red") !default
 +register("purple-invert", $purple-invert, true)
 +register("red-invert", $red-invert, true)
 
-$primary-invert: findColorInvert("primary") !default
+$primary-invert: var(--primary-invert) !default
 $primary-light: findLightColor("primary") !default
 $primary-dark: findDarkColor("primary") !default
-$info-invert: findColorInvert("info") !default
+$info-invert: var(--info-invert) !default
 $info-light: findLightColor("info") !default
 $info-dark: findDarkColor("info") !default
-$success-invert: findColorInvert("success") !default
+$success-invert: var(--success-invert) !default
 $success-light: findLightColor("success") !default
 $success-dark: findDarkColor("success") !default
-$warning-invert: findColorInvert("warning") !default
+$warning-invert: var(--warning-invert) !default
 $warning-light: findLightColor("warning") !default
 $warning-dark: findDarkColor("warning") !default
-$danger-invert: findColorInvert("danger") !default
+$danger-invert: var(--danger-invert) !default
 $danger-light: findLightColor("danger") !default
 $danger-dark: findDarkColor("danger") !default
-$light-invert: findColorInvert("light") !default
-$dark-invert: findColorInvert("dark") !default
+$light-invert: var(--light-invert) !default
+$dark-invert: var(--dark-invert) !default
 
 +register(white-invert, v("black"), true)
 +register(black-invert, v("white"), true)
@@ -196,7 +196,7 @@ $custom-colors-list: null !default
 $custom-colors: null !default
 
 //Deprecated
-$colors: mergeColorMaps(("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark), "primary": ($primary, $primary), "link": ($link, $link), "info": ($info, $info), "success": ($success, $success), "warning": ($warning, $warning), "danger": ($danger, $danger)), $custom-colors) !default
+$colors: mergeColorMaps(("white": ($white, $black), "black": ($black, $white), "light": ($light, $light-invert), "dark": ($dark, $dark-invert), "primary": ($primary, $primary-invert, $primary-light, $primary-dark), "link": ($link, $link-invert, $link-light, $link-dark), "info": ($info, $info-invert, $info-light, $info-dark), "success": ($success, $success-invert, $success-light, $success-dark), "warning": ($warning, $warning-invert, $warning-light, $warning-dark), "danger": ($danger, $danger-invert, $danger-light, $danger-dark)), $custom-colors) !default
 
 @if $custom-colors
   @warn "The $custom-colors variable was deprecated use $custom-colors-list instead"
