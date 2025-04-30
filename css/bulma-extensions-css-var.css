@@ -623,35 +623,35 @@ html {
 }
 .v-tooltip.is-light:after {
   background: var(--white-ter);
-  color: #fff;
+  color: var(--light-invert);
 }
 .v-tooltip.is-dark:after {
   background: var(--grey-darker);
-  color: var(--grey-darker);
+  color: var(--dark-invert);
 }
 .v-tooltip.is-primary:after {
   background: var(--primary);
-  color: var(--primary);
+  color: var(--primary-invert);
 }
 .v-tooltip.is-link:after {
   background: var(--link);
-  color: var(--link);
+  color: #fff;
 }
 .v-tooltip.is-info:after {
   background: var(--info);
-  color: var(--info);
+  color: var(--info-invert);
 }
 .v-tooltip.is-success:after {
   background: var(--success);
-  color: var(--success);
+  color: var(--success-invert);
 }
 .v-tooltip.is-warning:after {
   background: var(--warning);
-  color: var(--warning);
+  color: var(--warning-invert);
 }
 .v-tooltip.is-danger:after {
   background: var(--danger);
-  color: var(--danger);
+  color: var(--danger-invert);
 }
 .v-tooltip:not([data-label=""]).is-always:before, .v-tooltip:not([data-label=""]).is-always:after {
   opacity: 1;
@@ -1811,7 +1811,7 @@ input[type=range].slider.is-light::-ms-fill-upper {
 }
 input[type=range].slider.is-light + output {
   background-color: var(--white-ter);
-  color: #fff;
+  color: var(--light-invert);
 }
 input[type=range].slider.is-dark::-moz-range-track {
   background: var(--grey-darker) !important;
@@ -1830,7 +1830,7 @@ input[type=range].slider.is-dark::-ms-fill-upper {
 }
 input[type=range].slider.is-dark + output {
   background-color: var(--grey-darker);
-  color: var(--grey-darker);
+  color: var(--dark-invert);
 }
 input[type=range].slider.is-primary::-moz-range-track {
   background: var(--primary) !important;
@@ -1849,7 +1849,7 @@ input[type=range].slider.is-primary::-ms-fill-upper {
 }
 input[type=range].slider.is-primary + output {
   background-color: var(--primary);
-  color: var(--primary);
+  color: var(--primary-invert);
 }
 input[type=range].slider.is-link::-moz-range-track {
   background: var(--link) !important;
@@ -1868,7 +1868,7 @@ input[type=range].slider.is-link::-ms-fill-upper {
 }
 input[type=range].slider.is-link + output {
   background-color: var(--link);
-  color: var(--link);
+  color: #fff;
 }
 input[type=range].slider.is-info::-moz-range-track {
   background: var(--info) !important;
@@ -1887,7 +1887,7 @@ input[type=range].slider.is-info::-ms-fill-upper {
 }
 input[type=range].slider.is-info + output {
   background-color: var(--info);
-  color: var(--info);
+  color: var(--info-invert);
 }
 input[type=range].slider.is-success::-moz-range-track {
   background: var(--success) !important;
@@ -1906,7 +1906,7 @@ input[type=range].slider.is-success::-ms-fill-upper {
 }
 input[type=range].slider.is-success + output {
   background-color: var(--success);
-  color: var(--success);
+  color: var(--success-invert);
 }
 input[type=range].slider.is-warning::-moz-range-track {
   background: var(--warning) !important;
@@ -1925,7 +1925,7 @@ input[type=range].slider.is-warning::-ms-fill-upper {
 }
 input[type=range].slider.is-warning + output {
   background-color: var(--warning);
-  color: var(--warning);
+  color: var(--warning-invert);
 }
 input[type=range].slider.is-danger::-moz-range-track {
   background: var(--danger) !important;
@@ -1944,7 +1944,7 @@ input[type=range].slider.is-danger::-ms-fill-upper {
 }
 input[type=range].slider.is-danger + output {
   background-color: var(--danger);
-  color: var(--danger);
+  color: var(--danger-invert);
 }
 
 .pagination-next, .pagination-previous {
@@ -2129,7 +2129,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-light.is-completed .step-marker {
-  color: #fff;
+  color: var(--light-invert);
   background-color: var(--white-ter);
 }
 .steps .step-item.is-dark::before {
@@ -2149,7 +2149,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-dark.is-completed .step-marker {
-  color: var(--grey-darker);
+  color: var(--dark-invert);
   background-color: var(--grey-darker);
 }
 .steps .step-item.is-primary::before {
@@ -2169,7 +2169,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-primary.is-completed .step-marker {
-  color: var(--primary);
+  color: var(--primary-invert);
   background-color: var(--primary);
 }
 .steps .step-item.is-link::before {
@@ -2189,7 +2189,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-link.is-completed .step-marker {
-  color: var(--link);
+  color: #fff;
   background-color: var(--link);
 }
 .steps .step-item.is-info::before {
@@ -2209,7 +2209,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-info.is-completed .step-marker {
-  color: var(--info);
+  color: var(--info-invert);
   background-color: var(--info);
 }
 .steps .step-item.is-success::before {
@@ -2229,7 +2229,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-success.is-completed .step-marker {
-  color: var(--success);
+  color: var(--success-invert);
   background-color: var(--success);
 }
 .steps .step-item.is-warning::before {
@@ -2249,7 +2249,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-warning.is-completed .step-marker {
-  color: var(--warning);
+  color: var(--warning-invert);
   background-color: var(--warning);
 }
 .steps .step-item.is-danger::before {
@@ -2269,7 +2269,7 @@ input[type=range].slider.is-danger + output {
   background-position: left bottom;
 }
 .steps .step-item.is-danger.is-completed .step-marker {
-  color: var(--danger);
+  color: var(--danger-invert);
   background-color: var(--danger);
 }
 .steps .steps-content {
